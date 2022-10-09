@@ -2,8 +2,3 @@
 
 #sudo openvpn {filename}.ovpn
     - tun0: tunnel interface
-
-Telnet (TCP) : 23
-
-#nmap -sV 10.129.232.246
-#telnet 10.129.232.246
