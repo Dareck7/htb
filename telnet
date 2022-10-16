@@ -3,4 +3,4 @@
 
 Telnet    TCP    23
 
-#telnet 10.129.232.246
+#telnet {target_IP}
