@@ -22,3 +22,20 @@ We can use vulnerability scanners that will scan the target systems for known vu
 + (an analysis is more about thinking outside the box) 
 where we try to look behind the scenes to discover where the potential vulnerabilities might lie.
 ```
+
+#### Exploitation 
+```
+The first we can jump into is the Exploitation stage. This happens when we do not yet have access to a system or application. 
+Of course, this assumes that we have already identified at least one gap and prepared everything necessary to attempt to exploit it.
+``` 
+
+#### Post-Exploitation
+```
+The second way leads to the Post-Exploitation stage, where we escalate privileges on the target system. 
+This assumes that we are already on the target system and can interact with it.
+```
+
+#### Lateral Movement 	
+```
+Our third option is the Lateral Movement stage, where we move from the already exploited system through the network and attack other systems. Again, this assumes that we are already on a target system and can interact with it. However, privilege escalation is not strictly necessary because interacting with the system already allows us to move further in the network under certain circumstances. Other times we will need to escalate privileges before moving laterally. Every assessment is different.
+```
