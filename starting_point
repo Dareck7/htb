@@ -1,4 +1,5 @@
-[htb][starting_point]
+[HTB][Starting Point]
+
 
 #sudo openvpn {filename}.ovpn
     - tun0: tunnel interface
