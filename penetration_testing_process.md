@@ -19,8 +19,8 @@ When we do not have enough information on hand, here we can dig deeper to find m
 #### Vulnerability Assessment 	
 ``` diff
 The next stop on our journey is Vulnerability Assessment, where we use the information found to identify potential weaknesses. 
-We can use vulnerability scanners that will scan the target systems for known vulnerabilities and manual analysis 
-+ (an analysis is more about thinking outside the box) 
+We can use vulnerability scanners that will scan the target systems for known vulnerabilities and manual analysis (an analysis is more about
++ thinking outside the box) 
 where we try to look behind the scenes to discover where the potential vulnerabilities might lie.
 ```
 
