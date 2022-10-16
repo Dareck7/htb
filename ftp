@@ -5,4 +5,4 @@ File Transfer Protocol
 
 TCP/21
 
-#ftp {targer_ip}
+#ftp {targer_IP}
