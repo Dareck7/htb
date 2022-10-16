@@ -25,3 +25,11 @@ After a successful lateral movement, we can jump into Pillaging once again. This
 #### Lateral Movement 	
 ```
 ```
+
+#### Proof-of-Concept
+```
+```
+
+#### Post-Engagement
+```
+```
