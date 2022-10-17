@@ -1,10 +1,13 @@
 ### Starting Point
 
+<br>
+
 #### Connect to the lab
 ```diff
 sudo openvpn {filename}.ovpn
 + tun0 (tunnel interface)
 ```
+<br>
     
 #### Test our connection to the target (ICMP echo request)
 ```
@@ -18,7 +21,8 @@ to prevent pinging between hosts, even in the same subnet (LAN), to avoid inside
 ```
 man {commandName}
 ```
-
+<br>
+    
 #### Print the flag
 ```
 cat flag.txt
