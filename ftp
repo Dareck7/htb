@@ -14,7 +14,11 @@ What is username that is used over FTP when you want to log in without having an
 
 230 Login successful.
 
+```
 help / ?
 dir / ls
 get flag.txt
 exit / bye
+```
+
+An example of a well-known GUI-oriented FTP Service is FileZilla.
