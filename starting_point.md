@@ -17,3 +17,5 @@ If you would like to learn about a specific command in more depth:
 ```
 man {commandName}
 ```
+
+cat flag.txt
