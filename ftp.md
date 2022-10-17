@@ -17,6 +17,13 @@ A typical misconfiguration for running FTP services allows an anonymous account 
 any other authenticated user. The anonymous username can be input when the prompt appears, followed
 by any password whatsoever since the service will disregard the password for this specific account.
 
+
+The operation of FTP services also issue the status for the commands you
+are sending to the remote host. The meaning of status updates are as follows:
+
+200 : PORT command successful. Consider using PASV.
+150 : Here comes the directory listing.
+226 : Directory send OK.
 230 Login successful.
 
 ```
