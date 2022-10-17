@@ -12,6 +12,9 @@ After a successful lateral movement, we can jump into Pillaging once again. This
 #### Vulnerability Assessment 	
 ``` diff
 + thinking outside the box 
+Nessus
+Qualys
+OpenVAS
 ```
 
 #### Exploitation 
