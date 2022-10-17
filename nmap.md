@@ -3,5 +3,5 @@
 
 ```diff
 nmap -sV {target_IP}
-+     -sV: version detection
++     -sV: Probe open ports to determine service/version info
 ```
