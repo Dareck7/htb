@@ -1,6 +1,7 @@
-### Telent
+### Telnet
 
-Telnet    TCP    23
-```
+```diff
 telnet {target_IP}
+
++ TCP/23
 ```
