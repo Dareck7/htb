@@ -22,3 +22,4 @@ exit / bye
 ```
 
 An example of a well-known GUI-oriented FTP Service is FileZilla.
+<img src="Screenshot from 2022-10-17 09-20-36.png">
