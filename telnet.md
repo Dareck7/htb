@@ -1,0 +1,6 @@
+### Telent
+
+Telnet    TCP    23
+```
+telnet {target_IP}
+```
