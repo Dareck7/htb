@@ -1,3 +1,5 @@
+<img src=https://academy.hackthebox.com/storage/modules/90/0-PT-Process.png>
+
 ### Testing Methods
 ``` diff
 + External Penetration Test
@@ -28,9 +30,12 @@ Red-Teaming       May include physical testing and social engineering, among oth
 Purple-Teaming    It can be combined with any of the above types. However, it focuses on working closely with the defenders.
 ```
 
-### Penetration Testing Process
-
-<img src=https://academy.hackthebox.com/storage/modules/90/0-PT-Process.png>
+### Types of Testing Environments
+```
+Network     Web App     Mobile              API                   Thick Clients
+IoT         Cloud       Source Code         Physical Security     Employees
+Hosts 	    Server      Security Policies   Firewalls             IDS/IPS
+```
 
 #### Pre-Engagement
 ```
