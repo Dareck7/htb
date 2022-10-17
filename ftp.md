@@ -5,6 +5,8 @@ File Transfer Protocol
 
 TCP/21
 
+#sudo apt install ftp -y
+#ftp -h
 #ftp {target_IP}
 
 For secure transmission that protects the username and password and encrypts the content, 
