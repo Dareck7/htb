@@ -42,3 +42,6 @@ IPC$ - The inter-process communication share. Used for inter-process communicati
 We will try to connect to each of the shares except for the IPC$ one, which is not valuable for us since it is
 not browsable as any regular directory would be and does not contain any files that we could use at this
 stage of our learning experience.
+
+The NT_STATUS_ACCESS_DENIED is output, letting us know that we do not have the proper credentials to
+connect to this share. 
