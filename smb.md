@@ -39,3 +39,6 @@ ADMIN$ - Administrative shares are hidden network shares created by the Windows 
 C$ - Administrative share for the C:\ disk volume. This is where the operating system is hosted.
 IPC$ - The inter-process communication share. Used for inter-process communication via named pipes and is not part of the file system.
 ```
+We will try to connect to each of the shares except for the IPC$ one, which is not valuable for us since it is
+not browsable as any regular directory would be and does not contain any files that we could use at this
+stage of our learning experience.
