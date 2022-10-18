@@ -22,6 +22,8 @@ We will be trying to perform is any of the following:
   - Guest authentication
   - Anonymous authentication
 
-```
+```diff
 smbclient -L {target_IP}  
+
+  + [-L|--list=HOST] : Selecting the targeted host for the connection request
 ```
