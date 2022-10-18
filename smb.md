@@ -17,10 +17,18 @@ If we do not specify a specific username to smbclient when attempting to connect
 That is the one you are currently logged into your Virtual Machine with.
 This is because SMB authentication always requires a username, so by not giving it one explicitly to try to login with, it will just have to pass your current local username to avoid throwing an error with the protocol.
 
-We will be trying to perform is any of the following:
+Nevertheless, let us use our local username since we do not know about any remote usernames present on
+the target host that we could potentially log in with. Next up, after that, we will be prompted for a password.
+This password is related to the username you input before. Hypothetically, if we were a legitimate remote
+user trying to log in to their resource, we would know our username and password and log in normally to
+access our share. In this case, we do not have such credentials, so what We will be trying to perform is any of the following:
 
   - Guest authentication
   - Anonymous authentication
+
+Any of these will result in us logging in without knowing a proper username/password combination and
+seeing the files stored on the share. Let us proceed to try that. We leave the password field blank, simply
+hitting Enter to tell the script to move along.
 
 ```diff
 smbclient -L {target_IP}  
