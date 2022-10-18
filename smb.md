@@ -25,5 +25,5 @@ We will be trying to perform is any of the following:
 ```diff
 smbclient -L {target_IP}  
 
-  + [-L|--list=HOST] : Selecting the targeted host for the connection request
++   [-L|--list=HOST] : Selecting the targeted host for the connection request
 ```
