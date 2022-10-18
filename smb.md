@@ -17,7 +17,7 @@ If we do not specify a specific username to smbclient when attempting to connect
 That is the one you are currently logged into your Virtual Machine with.
 This is because SMB authentication always requires a username, so by not giving it one explicitly to try to login with, it will just have to pass your current local username to avoid throwing an error with the protocol.
 
-we will be trying to perform is any of the following:
+We will be trying to perform is any of the following:
 
   - Guest authentication
   - Anonymous authentication
