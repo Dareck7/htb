@@ -30,10 +30,16 @@ hitting Enter to tell the script to move along.
 
 ```diff
 smbclient -L {target_IP}  
+smbclient \\\\{target_IP}\\WorkShares
 
 +   [-L|--list=HOST] : Selecting the targeted host for the connection request
 ```
-
+```
+ls : listing contents of the directories within the share
+cd : changing current directories within the share
+get : downloading the contents of the directories within the share
+exit : exiting the smb shell
+```
 ```
 ADMIN$ - Administrative shares are hidden network shares created by the Windows NT family of operating systems that allow system administrators to have remote access to every disk volume on a network-connected system. These shares may not be permanently deleted but may be disabled.
 C$ - Administrative share for the C:\ disk volume. This is where the operating system is hosted.
