@@ -1,6 +1,4 @@
 ### FTP (File Transfer Protocol)
-<br>
-<img src="Screenshot from 2022-10-17 09-20-36.png">
 
 ```diff
 sudo apt install ftp -y
