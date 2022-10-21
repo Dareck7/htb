@@ -5,8 +5,17 @@
 <img src=https://academy.hackthebox.com/storage/modules/90/0-PT-Process.png>
 
 #### 1. Pre-Engagement
-```
+```diff
 The first step is to create all the necessary documents in the pre-engagement phase, discuss the assessment objectives, and clarify any questions.
+
++ How many documents must be prepared in total for a penetration test? 
+1. Non-Disclosure Agreement (NDA)
+2. Scoping Questionnaire 
+3. Scoping Document
+4. Penetration Testing Proposal (Contract/Scope of Work (SoW))
+5. Rules of Engagement (RoE)
+6. Contractors Agreement (Physical Assessments)
+7. Reports
 ```
 #### 2. Information Gathering
 ```
