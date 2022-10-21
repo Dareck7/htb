@@ -27,3 +27,5 @@ man {commandName}
 ```
 cat flag.txt
 ```
+
+VPS (Virtual Private Server)
