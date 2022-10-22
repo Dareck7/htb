@@ -1,8 +1,7 @@
-#### Redis
+### Redis
 
 Redis (REmote DIctionary Server) is an open-source advanced NoSQL key-value data store used as a database, cache, and message broker. 
-The data is stored in a dictionary format having key-value pairs. 
-It is typically used for short term storage of data that needs fast retrieval. Redis does backup data to hard drives to provide consistency.
+The data is stored in a dictionary format having key-value pairs. It is typically used for short term storage of data that needs fast retrieval. Redis does backup data to hard drives to provide consistency.
 
 ```diff
 + 6379/tcp
@@ -14,8 +13,34 @@ redis-cli -h {target_IP}
 
   -h <hostname> : specify the hostname of the target to connect to
   
+  
 # information and statistics about the Redis server:
-> info
+10.129.120.118:6379> info
+# Server
+redis_version:5.0.7
+redis_git_sha1:00000000
+redis_git_dirty:0
+redis_build_id:66bd629f924ac924
+
+[** SNIP **]
+
+# Keyspace
+db0:keys=4,expires=0,avg_ttl=0
+
+
+# Let us select this Redis logical database:
+10.129.120.118:6379> select 0
+OK
+
+# We can list all the keys present in the database:
+10.129.120.118:6379> keys *
+1) "temp"
+2) "stor"
+3) "numb"
+4) "flag"
+
+# we can view the values stored for a corresponding key
+10.129.120.118:6379> get <key>
 ```
 
 There are different types of databases and one among them is Redis, which is an 'in-memory' database. 
@@ -34,3 +59,9 @@ majority of requests, while still having stable long term storage in the main da
 
 The database is stored in the server's RAM to enable fast data access. Redis also writes the contents of the
 database to disk at varying intervals to persist it as a backup, in case of failure.
+
+```
+The keyspace section provides statistics on the main dictionary of each database. 
+The statistics include the number of keys, and the number of keys with an expiration.
+In our case, under the Keyspace section, we can see that only one database exists with index 0. 
+```
