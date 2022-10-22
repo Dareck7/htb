@@ -8,7 +8,14 @@ It is typically used for short term storage of data that needs fast retrieval. R
 + 6379/tcp
 
 sudo apt install redis-tools
+redis-cli --help
+
 redis-cli -h {target_IP}
+
+  -h <hostname> : specify the hostname of the target to connect to
+  
+# information and statistics about the Redis server:
+> info
 ```
 
 There are different types of databases and one among them is Redis, which is an 'in-memory' database. 
