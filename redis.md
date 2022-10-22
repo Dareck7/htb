@@ -7,6 +7,7 @@ It is typically used for short term storage of data that needs fast retrieval. R
 ```diff
 + 6379/tcp
 
+sudo apt install redis-tools
 redis-cli -h {target_IP}
 ```
 
