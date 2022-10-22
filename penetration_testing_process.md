@@ -13,9 +13,9 @@ The first step is to create all the necessary documents in the pre-engagement ph
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. 
 We identify the technologies in use and learn how the web application functions.
   
-+ We can obtain the necessary information relevant to us in many different ways:
++ We can obtain the necessary information relevant to us in many different ways :
     - Open-Source Intelligence (OSINT)
-    - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more.)
+    - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)
     - Service Enumeration
     - Host Enumeration
     - Pillaging
