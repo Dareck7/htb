@@ -24,7 +24,7 @@ We identify the technologies in use and learn how the web application functions.
   
 + We can obtain the necessary information relevant to us in many different ways:
     - Open-Source Intelligence (OSINT)
-    - Infrastructure Enumeration
+    - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more.)
     - Service Enumeration
     - Host Enumeration
 ```
