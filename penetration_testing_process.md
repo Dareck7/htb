@@ -14,6 +14,7 @@ Once the pre-engagement activities are complete, we investigate the company's ex
 We identify the technologies in use and learn how the web application functions.
   
 + We can obtain the necessary information relevant to us in many different ways :
+  
     - Open-Source Intelligence (OSINT)
     - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)
     - Service Enumeration
@@ -30,19 +31,23 @@ With this information, we can look for known vulnerabilities (Nessus, Qualys, Op
     - Is this a standard port? - No, because these are between 0-1023, aka well-known or system ports
     - Are there any numbers in this port number that look familiar? - Yes, TCP port 21 (FTP). From our experience, we will get to know many standard ports and their services, which administrators often try to disguise, but often use "easy to remember" alternatives.
     - Based on our guess, we can try to connect to the service using Netcat or an FTP client and try to establish a connection to confirm or disprove our guess.
-  
-+ Common Vulnerabilities and Exposures (CVE)
+```
++ <p>Find vulnerability disclosures and CVEs* :</p>
   
     - [CVEdetails](https://www.cvedetails.com/)
-    - https://packetstormsecurity.com/
-    - https://www.exploit-db.com/
-    - https://nvd.nist.gov/vuln/search?execution=e2s1
-    - https://bugtraq.securityfocus.com/archive
-    - https://vulners.com/
-```
+    - [Packet Storm Security](https://packetstormsecurity.com/)
+    - [Exploit DB](https://www.exploit-db.com/)
+    - [NIST](https://nvd.nist.gov/vuln/search?execution=e2s1)
+    - [SecurityFocus](https://bugtraq.securityfocus.com/archive)
+    - [Vulners](https://vulners.com/) 
+<br>
+
+  
 #### 4. Exploitation 
 ```
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
+
+
 ``` 
 #### 5. Post-Exploitation
 ```
@@ -100,3 +105,5 @@ Network     Web App     Mobile              API                   Thick Clients
 IoT         Cloud       Source Code         Physical Security     Employees
 Hosts 	    Server      Security Policies   Firewalls             IDS/IPS
 ```
+
+CVE : Common Vulnerability Exposure
