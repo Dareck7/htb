@@ -4,11 +4,13 @@
   
 <img src=https://academy.hackthebox.com/storage/modules/90/0-PT-Process.png>
 
-#### 1. Pre-Engagement
+### 1. Pre-Engagement
 ```
 The first step is to create all the necessary documents in the pre-engagement phase, discuss the assessment objectives, and clarify any questions.
 ```
-#### 2. Information Gathering
+<br>
+  
+### 2. Information Gathering
 ```diff
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. 
 We identify the technologies in use and learn how the web application functions.
@@ -21,7 +23,9 @@ We identify the technologies in use and learn how the web application functions.
     - Host Enumeration
     - Pillaging
 ```
-#### 3. Vulnerability Assessment 	
+<br>
+  
+### 3. Vulnerability Assessment 	
 ``` diff
 With this information, we can look for known vulnerabilities (Nessus, Qualys, OpenVAS) and investigate questionable features that may allow for unintended actions.
 
@@ -32,7 +36,7 @@ With this information, we can look for known vulnerabilities (Nessus, Qualys, Op
     - Are there any numbers in this port number that look familiar? - Yes, TCP port 21 (FTP). From our experience, we will get to know many standard ports and their services, which administrators often try to disguise, but often use "easy to remember" alternatives.
     - Based on our guess, we can try to connect to the service using Netcat or an FTP client and try to establish a connection to confirm or disprove our guess.
 ```
-+ <p>Find vulnerability disclosures and CVEs* :</p>
++ <p>Find vulnerability disclosures and CVEs :</p>
   
     - [CVEdetails](https://www.cvedetails.com/)
     - [Packet Storm Security](https://packetstormsecurity.com/)
@@ -40,20 +44,25 @@ With this information, we can look for known vulnerabilities (Nessus, Qualys, Op
     - [NIST](https://nvd.nist.gov/vuln/search?execution=e2s1)
     - [SecurityFocus](https://bugtraq.securityfocus.com/archive)
     - [Vulners](https://vulners.com/) 
+
 <br>
 
-  
-#### 4. Exploitation 
-```
+### 4. Exploitation 
+```diff
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 
-
++ Complexity represents the effort of exploiting a specific vulnerability.
 ``` 
+We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
+
+<br>
+
 #### 5. Post-Exploitation
 ```
 Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. 
 If we find sensitive information during this stage, we try to escalate our privileges (depending on the system and configurations).
 ```
+
 #### 6. Lateral Movement 	
 ```
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered.
@@ -107,3 +116,5 @@ Hosts 	    Server      Security Policies   Firewalls             IDS/IPS
 ```
 
 CVE : Common Vulnerability Exposure
+NVD : National Vulnerability Database
+CVSS : Common Vulnerability Scoring System
