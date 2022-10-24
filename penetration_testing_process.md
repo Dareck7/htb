@@ -15,7 +15,7 @@ The first step is to create all the necessary documents in the pre-engagement ph
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. 
 We identify the technologies in use and learn how the web application functions.
   
-+ We can obtain the necessary information relevant to us in many different ways :
+- We can obtain the necessary information relevant to us in many different ways :
   
     - Open-Source Intelligence (OSINT)
     - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)
@@ -29,14 +29,14 @@ We identify the technologies in use and learn how the web application functions.
 ``` diff
 With this information, we can look for known vulnerabilities (Nessus, Qualys, OpenVAS) and investigate questionable features that may allow for unintended actions.
 
-+ Suppose we found an open TCP port 2121 on a host during the information-gathering phase :
+- Suppose we found an open TCP port 2121 on a host during the information-gathering phase :
 
     - a TCP port 2121. - TCP already means that this service is connection-oriented.
     - Is this a standard port? - No, because these are between 0-1023, aka well-known or system ports
     - Are there any numbers in this port number that look familiar? - Yes, TCP port 21 (FTP). From our experience, we will get to know many standard ports and their services, which administrators often try to disguise, but often use "easy to remember" alternatives.
     - Based on our guess, we can try to connect to the service using Netcat or an FTP client and try to establish a connection to confirm or disprove our guess.
 ```
-+ <p>Find vulnerability disclosures and CVEs :</p>
+- <p>Find vulnerability disclosures and CVEs :</p>
   
     - [CVEdetails](https://www.cvedetails.com/)
     - [Packet Storm Security](https://packetstormsecurity.com/)
@@ -51,7 +51,7 @@ With this information, we can look for known vulnerabilities (Nessus, Qualys, Op
 ```diff
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 
-+ Complexity represents the effort of exploiting a specific vulnerability.
+- Complexity represents the effort of exploiting a specific vulnerability.
 ``` 
 We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
 
