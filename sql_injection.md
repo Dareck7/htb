@@ -68,8 +68,8 @@ To be more precise, here is how the query part of the PHP code gets affected by 
 
 <img src="img/Screenshot from 2022-10-29 14-29-46.png">
 
-Notice how following our input, we have commented out the password check section of the query? This will
-result in the PHP script returning the value 1 (1 row found) for username = 'admin' without checking the
-password field to match that entry. This is due to a lack of input validation in the PHP code.
+Notice how following our input, we have commented out the password check section of the query? 
+This will result in the PHP script returning the value 1 (1 row found) for username = 'admin' without checking the password field to match that entry. 
+This is due to a lack of input validation in the PHP code.
 
 <img src="img/Screenshot from 2022-10-29 14-31-30.png">
