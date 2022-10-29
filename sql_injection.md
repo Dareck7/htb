@@ -10,7 +10,7 @@ What does the OWASP Top 10 list name the classification for this vulnerability?
 
 HHTP TCP/80
 HTTPS TCP/443
-Alternatively on HTTP ports such as 8080 TCP or 8000 TCP.  
+- Alternatively on HTTP ports such as 8080 TCP or 8000 TCP.  
 
 What is a folder called in web-application terminology? 
 - directory
