@@ -43,3 +43,9 @@ how the server handled it. Some of the more common status codes for the HTTP pro
 3- If the resource or directory exists, we will receive the HTTP Server response containing the data we requested (be it a webpage, an image, an audio file, a script, etc.) and response code 200 OK , because the resource was found and the request was fulfilled with success.
 4- If the resource or directory cannot be found at the specified address, and there is no redirection implemented for it by the server administrator, the HTTP Server response will contain the typical 404 Page with the response code 400 Not Found attached.
 ```
+
+The same attack type comes into play for password brute-forcing - submitting passwords from a wordlist
+until we find the right one for the specified username. This method is prevalent for low-skilled attackers due
+to its low complexity, with the downside of being "noisy", meaning that it involves sending a large number of
+requests every second, so much that it becomes easily detectable by perimeter security devices that are
+fine-tuned to listen for non-human interactions with log-in forms.
