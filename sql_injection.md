@@ -49,3 +49,28 @@ until we find the right one for the specified username. This method is prevalent
 to its low complexity, with the downside of being "noisy", meaning that it involves sending a large number of
 requests every second, so much that it becomes easily detectable by perimeter security devices that are
 fine-tuned to listen for non-human interactions with log-in forms.
+
+```
+The pair of single quotes are used to specify the exact data that needs to be retrieved from the SQL Database, while the hashtag symbol is used to make comments. 
+Therefore, we could manipulate the query command by inputting the following:
+
+Username: admin'#
+
+We will close the query with that single quote, allowing the script to search for the admin username. By
+adding the hashtag, we will comment out the rest of the query, which will make searching for a matching
+password for the specified username obsolete. If we look further down in the PHP code above, we will see
+that the code will only approve the log-in once there is precisely one result of our username and password
+combination. However, since we have skipped the password search part of our query, the script will now
+only search if any entry exists with the username admin . In this case, we got lucky. There is indeed an
+account called admin , which will validate our SQL Injection and return the 1 value for the $count variable,
+which will be put through the if statement , allowing us to log-in without knowing the password. If there
+was no admin account, we could try any other accounts until we found one that existed. ( administrator ,
+root , john_doe , etc.) Any valid, existing username would make our SQL Injection work.
+In this case, because the password-search part of the query has been skipped, we can throw anything we
+want at the password field, and it will not matter.
+```
+To be more precise, here is how the query part of the PHP code gets affected by our input.
+
+Notice how following our input, we have commented out the password check section of the query? This will
+result in the PHP script returning the value 1 (1 row found) for username = 'admin' without checking the
+password field to match that entry. This is due to a lack of input validation in the PHP code.
