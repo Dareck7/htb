@@ -38,5 +38,8 @@ how the server handled it. Some of the more common status codes for the HTTP pro
 - HTTP1/1 404 Not Found : Page/resource does not exist.
 - HTTP1/1 302 Found : Page/resource found, but by redirection to another directory (moved temporarily). This is an invitation to the user-agent (the web browser) to make a second, identical request to the new URL specified in the location field. You will perceive the whole process as a seamless redirection to the new URL of the specified resource.
 
-
+1- The user-agent (the browser / the HTTP client) will send a GET request to the HTTP Server with the URL of the resource we requested
+2- The HTTP server will look up the resource in the specified location (the given URL)
+3- If the resource or directory exists, we will receive the HTTP Server response containing the data we requested (be it a webpage, an image, an audio file, a script, etc.) and response code 200 OK , because the resource was found and the request was fulfilled with success.
+4- If the resource or directory cannot be found at the specified address, and there is no redirection implemented for it by the server administrator, the HTTP Server response will contain the typical 404 Page with the response code 400 Not Found attached.
 ```
