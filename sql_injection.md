@@ -27,3 +27,16 @@ vulnerability.
 There are many different techniques of protecting from SQL injections, some of them being input validation, parameterized queries, stored procedures, and
 implementing a WAF (Web Application Firewall) on the perimeter of the server's network.
 ``` 
+
+```
+The HTTP client, which is your browser, communicates with the HTTP server (in this case Apache 2.4.38) using the HTTP protocol by sending an HTTP Request (a GET or POST message) which the server will then process and return with an HTTP Response.
+
+HTTP Responses contain status codes, which detail the interaction status between the client's request and
+how the server handled it. Some of the more common status codes for the HTTP protocol are:
+
+- HTTP1/1 200 OK : Page/resource exists, proceeds with sending you the data.
+- HTTP1/1 404 Not Found : Page/resource does not exist.
+- HTTP1/1 302 Found : Page/resource found, but by redirection to another directory (moved temporarily). This is an invitation to the user-agent (the web browser) to make a second, identical request to the new URL specified in the location field. You will perceive the whole process as a seamless redirection to the new URL of the specified resource.
+
+
+```
