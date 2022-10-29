@@ -3,12 +3,14 @@
 ```diff
 PII : Personally Identifiable Information 
 SQL : Structured Query Language
+HTTP stands for Hypertext Transfer Protocol, and it is an application-layer protocol used for transmitting hypermedia documents, such as HTML (Hypertext Markup Language).
 
 What does the OWASP Top 10 list name the classification for this vulnerability? 
 - A03:2021-Injection 
 
 HHTP TCP/80
 HTTPS TCP/443
+Alternatively on HTTP ports such as 8080 TCP or 8000 TCP.  
 
 What is a folder called in web-application terminology? 
 - directory
