@@ -77,4 +77,4 @@ This is due to a lack of input validation in the PHP code.
 
 <br>
 
-<img src="Screenshot from 2022-11-01 17-12-40.png">
+<img src="img/Screenshot from 2022-11-01 17-12-40.png">
