@@ -15,7 +15,7 @@ The first step is to create all the necessary documents in the pre-engagement ph
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. 
 We identify the technologies in use and learn how the web application functions.
   
-- We can obtain the necessary information relevant to us in many different ways :
+@@ We can obtain the necessary information relevant to us in many different ways : @@
   
     - Open-Source Intelligence (OSINT)
     - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)
@@ -29,7 +29,7 @@ We identify the technologies in use and learn how the web application functions.
 ``` diff
 With this information, we can look for known vulnerabilities (Nessus, Qualys, OpenVAS) and investigate questionable features that may allow for unintended actions.
 
-- Suppose we found an open TCP port 2121 on a host during the information-gathering phase :
+@@ Suppose we found an open TCP port 2121 on a host during the information-gathering phase : @@
 
     - a TCP port 2121. - TCP already means that this service is connection-oriented.
     - Is this a standard port? - No, because these are between 0-1023, aka well-known or system ports
@@ -51,7 +51,7 @@ With this information, we can look for known vulnerabilities (Nessus, Qualys, Op
 ```diff
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 
-- Complexity represents the effort of exploiting a specific vulnerability.
+@@ Complexity represents the effort of exploiting a specific vulnerability. @@
 ``` 
 We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
 
@@ -69,18 +69,23 @@ We want to get the privileges of the root (on Linux-based systems) or the domain
 Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and Response (EDR) help detect and prevent data exfiltration. 
 In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
 
-- What is the name of the security regulation for credit card payments a company must adhere to? PCI-DSS
+@@ What is the name of the security regulation for credit card payments a company must adhere to? PCI-DSS @@
 ```
 <br>
 
 ### 6. Lateral Movement 	
 ```
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered.
+@@ The goal here is that we test what an attacker could do within the entire network. @@
+
+- One of the most common examples is ransomware. 
+
+If a system in the corporate network is infected with ransomware, it can spread across the entire network. 
 ```
 <br>
 
 ### 7. Proof-of-Concept
-```
+```diff
 We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 ```
 <br>
