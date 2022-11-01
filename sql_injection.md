@@ -80,6 +80,17 @@ This is due to a lack of input validation in the PHP code.
 mysql 3306/tcp
 
 - What community-developed MySQL version is the target running? MariaDB 
+- It is essential to test for passwordless authentication
 
 sudo apt update && sudo apt install mysql* -y
+mysql --help
+
+mysql -h {targey_IP} -u root
+-h : Connect to host.
+-u : User for log-in if not current user.
+
+SHOW databases;               : Prints out the databases we can access.
+USE {database_name};          : Set to use the database named {database_name}.
+SHOW tables;                  : Prints out the available tables inside the current database.
+SELECT * FROM {table_name};   : Prints out all the data from the table {table_name}.
 ```
