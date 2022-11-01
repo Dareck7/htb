@@ -71,15 +71,20 @@ In addition to Network Monitoring, many companies use encryption on hard drives 
 
 - What is the name of the security regulation for credit card payments a company must adhere to? PCI-DSS
 ```
+<br>
 
 ### 6. Lateral Movement 	
 ```
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered.
 ```
+<br>
+
 ### 7. Proof-of-Concept
 ```
 We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 ```
+<br>
+
 ### 8. Post-Engagement
 ```
 Finally, the documentation is completed and presented to our client as a formal report deliverable. 
