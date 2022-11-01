@@ -21,7 +21,7 @@ We identify the technologies in use and learn how the web application functions.
     - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)
     - Service Enumeration
     - Host Enumeration
-    - Pillaging
+    - Pillaging (understanding the role of the system)
 ```
 <br>
   
@@ -61,6 +61,7 @@ We need to assess the probability of successfully executing a particular attack 
 ```
 Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. 
 If we find sensitive information during this stage, we try to escalate our privileges (depending on the system and configurations).
+From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. 
 ```
 
 #### 6. Lateral Movement 	
