@@ -80,4 +80,6 @@ This is due to a lack of input validation in the PHP code.
 mysql 3306/tcp
 
 - What community-developed MySQL version is the target running? MariaDB 
+
+sudo apt update && sudo apt install mysql* -y
 ```
