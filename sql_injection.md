@@ -10,8 +10,6 @@ What does the OWASP Top 10 list name the classification for this vulnerability?
 
 HHTP TCP/80
 HTTPS TCP/443
-mysql 3306/tcp
-
 - Alternatively on HTTP ports such as 8080 TCP or 8000 TCP.  
 
 What is a folder called in web-application terminology? 
@@ -78,4 +76,8 @@ This is due to a lack of input validation in the PHP code.
 
 <br>
 
-<img src="img/Screenshot from 2022-11-01 17-12-40.png">
+```diff
+mysql 3306/tcp
+
+- What community-developed MySQL version is the target running? MariaDB 
+```
