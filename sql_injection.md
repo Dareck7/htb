@@ -10,6 +10,7 @@ What does the OWASP Top 10 list name the classification for this vulnerability?
 
 HHTP TCP/80
 HTTPS TCP/443
+
 - Alternatively on HTTP ports such as 8080 TCP or 8000 TCP.  
 
 What is a folder called in web-application terminology? 
@@ -73,3 +74,9 @@ This will result in the PHP script returning the value 1 (1 row found) for usern
 This is due to a lack of input validation in the PHP code.
 
 <img src="img/Screenshot from 2022-10-29 14-31-30.png">
+
+
+
+
+
+<img src="">
