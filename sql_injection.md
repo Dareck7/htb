@@ -10,6 +10,7 @@ What does the OWASP Top 10 list name the classification for this vulnerability?
 
 HHTP TCP/80
 HTTPS TCP/443
+mysql 3306/tcp
 
 - Alternatively on HTTP ports such as 8080 TCP or 8000 TCP.  
 
