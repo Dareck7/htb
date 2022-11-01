@@ -57,22 +57,22 @@ We need to assess the probability of successfully executing a particular attack 
 
 <br>
 
-#### 5. Post-Exploitation
+### 5. Post-Exploitation
 ```
 Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. 
 If we find sensitive information during this stage, we try to escalate our privileges (depending on the system and configurations).
 From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. 
 ```
 
-#### 6. Lateral Movement 	
+### 6. Lateral Movement 	
 ```
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered.
 ```
-#### 7. Proof-of-Concept
+### 7. Proof-of-Concept
 ```
 We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 ```
-#### 8. Post-Engagement
+### 8. Post-Engagement
 ```
 Finally, the documentation is completed and presented to our client as a formal report deliverable. 
 Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any needed support to personnel tasked with remediating our findings.
