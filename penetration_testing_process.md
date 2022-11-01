@@ -58,16 +58,18 @@ We need to assess the probability of successfully executing a particular attack 
 <br>
 
 ### 5. Post-Exploitation
-```
+```diff
 Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. 
 If we find sensitive information during this stage, we try to escalate our privileges (depending on the system and configurations).
 From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. 
-Persistence is maintaining access to the exploited host.
+We want to get the privileges of the root (on Linux-based systems) or the domain administrator/local administrator/SYSTEM (on Windows-based systems).
 
-we want to get the privileges of the root (on Linux-based systems) or the domain administrator/local administrator/SYSTEM (on Windows-based systems) 
-Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and Response (EDR) help detect and prevent data exfiltration. In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
+- Persistence is maintaining access to the exploited host.
 
-What is the name of the security regulation for credit card payments a company must adhere to? (Answer Format: acronym) PCI-DSS
+Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and Response (EDR) help detect and prevent data exfiltration. 
+In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
+
+- What is the name of the security regulation for credit card payments a company must adhere to? PCI-DSS
 ```
 
 ### 6. Lateral Movement 	
