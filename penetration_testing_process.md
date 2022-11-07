@@ -132,6 +132,7 @@ Our report deliverable should consist of the following:
 We should ensure that any systems used to connect to the client's systems or process data have been wiped or destroyed and that any artifacts leftover from the engagement are stored securely (encrypted) per our firm's policy and per contractual obligations to our client.
 @@ What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFT @@
 ```
+The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest TTPs  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
 <br>
 
 ### Testing Methods
