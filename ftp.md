@@ -31,3 +31,4 @@ are sending to the remote host. The meaning of status updates are as follows:<p>
 ```
   
 An example of a well-known GUI-oriented FTP Service is FileZilla.
+What is the name of a handy web site analysis plug-in we can install in our browser? Wappalyzer
