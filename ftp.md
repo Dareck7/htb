@@ -6,7 +6,7 @@ authenticate themselves with a clear-text sign-in protocol, generally using a us
 and password. However, they can connect anonymously if the server is configured to
 allow it.
 <br>
-
+<br>
 ```diff
 sudo apt install ftp -y
 ftp -h
