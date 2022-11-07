@@ -109,7 +109,7 @@ For example, if a user uses the password Password123, the underlying vulnerabili
 <br>
 
 ### 8. Post-Engagement
-```
+```diff
 Finally, the documentation is completed and presented to our client as a formal report deliverable. 
 Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any needed support to personnel tasked with remediating our findings.
 
@@ -126,11 +126,11 @@ Our report deliverable should consist of the following:
     Near, medium, and long-term recommendations specific to the environment
     Appendices which include information such as the target scope, OSINT data (if relevant to the engagement), password cracking analysis (if relevant), discovered ports/services, compromised hosts, compromised accounts, files transferred to client-owned systems, any account creation/system modifications, an Active Directory security analysis (if relevant), relevant scan data/supplementary documentation, and any other information necessary to explain a specific finding or recommendation further
 
-@@ We should not be implementing changes ourselves or even giving precise remediation advice (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code). @@
+
+- We should not be implementing changes ourselves or even giving precise remediation advice (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code).
 
 We should ensure that any systems used to connect to the client's systems or process data have been wiped or destroyed and that any artifacts leftover from the engagement are stored securely (encrypted) per our firm's policy and per contractual obligations to our client.
-
-What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFR
+@@ What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFT @@
 ```
 <br>
 
