@@ -7,6 +7,7 @@ and password. However, they can connect anonymously if the server is configured 
 allow it.
 <br>
 <br>
+
 ```diff
 sudo apt install ftp -y
 ftp -h
