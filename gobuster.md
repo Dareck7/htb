@@ -25,4 +25,5 @@ Available commands:
 
 Flags:
   -w, --wordlist string   Path to the wordlist
+  x string    File extension(s) to search for (dir mode only)
 ```
