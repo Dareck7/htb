@@ -166,15 +166,3 @@ Whitebox          Maximum. Here everything is disclosed to us. This gives us an 
 Red-Teaming       May include physical testing and social engineering, among other things. Can be combined with any of the above types.
 Purple-Teaming    It can be combined with any of the above types. However, it focuses on working closely with the defenders.
 ```
-
-### Types of Testing Environments
-```
-Network     Web App     Mobile              API                   Thick Clients
-IoT         Cloud       Source Code         Physical Security     Employees
-Hosts 	    Server      Security Policies   Firewalls             IDS/IPS
-```
-
-CVE : Common Vulnerability Exposure
-NVD : National Vulnerability Database
-CVSS : Common Vulnerability Scoring System
-(NIST) - National Institute of Standards and Technology 	(CIS Controls) - Center for Internet Security Controls
