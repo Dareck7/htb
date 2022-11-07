@@ -122,8 +122,8 @@ We should ensure that any systems used to connect to the client's systems or pro
 @@ What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFT @@
 ```
 <br>
-The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest TTPs  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
-<br><br>
+<br>
+<br>
 
 ### Testing Methods
 ``` diff
@@ -155,3 +155,5 @@ Whitebox          Maximum. Here everything is disclosed to us. This gives us an 
 Red-Teaming       May include physical testing and social engineering, among other things. Can be combined with any of the above types.
 Purple-Teaming    It can be combined with any of the above types. However, it focuses on working closely with the defenders.
 ```
+<br>
+The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest TTPs  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
