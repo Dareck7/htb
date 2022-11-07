@@ -36,7 +36,7 @@ With this information, we can look for known vulnerabilities and investigate que
     - Are there any numbers in this port number that look familiar? - Yes, TCP port 21 (FTP). From our experience, we will get to know many standard ports and their services, which administrators often try to disguise, but often use "easy to remember" alternatives.
     - Based on our guess, we can try to connect to the service using Netcat or an FTP client and try to establish a connection to confirm or disprove our guess.
   
-- Nessus, Qualys, OpenVAS
++ Nessus, Qualys, OpenVAS
 ```
 - <p>Find vulnerability disclosures and CVEs :</p>
   
@@ -83,9 +83,7 @@ The goal here is that we test what an attacker could do within the entire networ
 - One of the most common examples is ransomware. 
 
 If a system in the corporate network is infected with ransomware, it can spread across the entire network. 
-
-Some pivoting techniques (access inaccessible systems via an intermediary system) allow us to use the exploited host as a proxy and perform all the scans from our attack machine or VM.
-- In this way, we make non-routable networks can still be reached. 
+Some pivoting techniques (access inaccessible systems via an intermediary system) allow us to use the exploited host as a proxy and perform all the scans from our attack machine or VM. In this way, we make non-routable networks can still be reached. 
 
 Another standard method is to use our existing credentials on other systems. We can use the tool Responder to intercept NTLMv2 hashes. 
 If we can intercept a hash from an administrator, then we can use the pass-the-hash technique to log in as that administrator (in most cases) on multiple hosts and servers.
@@ -106,7 +104,7 @@ Therefore, working against our script instead of with it and modifying and secur
 Show how fixing one flaw will break the chain, but the other flaws will still exist.
 For example, if a user uses the password Password123, the underlying vulnerability is not the password but the password policy.
 
-- High quality stands for high standards, which we should emphasize through our remediation recommendations.
++ High quality stands for high standards, which we should emphasize through our remediation recommendations.
 ```
 <br>
 
@@ -114,32 +112,22 @@ For example, if a user uses the password Password123, the underlying vulnerabili
 ```diff
 Finally, the documentation is completed and presented to our client as a formal report deliverable. 
 Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any needed support to personnel tasked with remediating our findings.
-
 Once testing is complete, we should perform any necessary cleanup, such as deleting tools/scripts uploaded to target systems, reverting any (minor) configuration changes we may have made, etc.
+
 - We should not keep any Personal Identifiable Information (PII), potentially incriminating info, or other sensitive data we came across throughout testing.
 
-
-Our report deliverable should consist of the following:
-
-    An attack chain (in the event of full internal compromise or external to internal access) detailing steps taken to achieve compromise
-    A strong executive summary that a non-technical audience can understand
-    Detailed findings specific to the client's environment that include a risk rating, finding impact, remediation recommendations, and high-quality external references related to the issue
-    Adequate steps to reproduce each finding so the team responsible for remediation can understand and test the issue while putting fixes in place
-    Near, medium, and long-term recommendations specific to the environment
-    Appendices which include information such as the target scope, OSINT data (if relevant to the engagement), password cracking analysis (if relevant), discovered ports/services, compromised hosts, compromised accounts, files transferred to client-owned systems, any account creation/system modifications, an Active Directory security analysis (if relevant), relevant scan data/supplementary documentation, and any other information necessary to explain a specific finding or recommendation further
-
-
-- We should not be implementing changes ourselves or even giving precise remediation advice (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code).
-
+We should not be implementing changes ourselves or even giving precise remediation advice (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code).
 We should ensure that any systems used to connect to the client's systems or process data have been wiped or destroyed and that any artifacts leftover from the engagement are stored securely (encrypted) per our firm's policy and per contractual obligations to our client.
+
 @@ What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFT @@
 ```
-The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest TTPs  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
 <br>
+The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest TTPs  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
+<br><br>
 
 ### Testing Methods
 ``` diff
-+ External Penetration Test
+- External Penetration Test
 
 Many pentests are performed from an external perspective or as an anonymous user on the Internet. 
 Most customers want to ensure that they are as protected as possible against attacks on their external network perimeter. 
@@ -149,12 +137,13 @@ They may ask for a stealthy or "hybrid" approach where we gradually become "nois
 Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.
 
 
-+ Internal Penetration Test
+- Internal Penetration Test
 
 In contrast to an external pentest, an internal pentest is when we perform testing from within the corporate network. 
 This stage may be executed after successfully penetrating the corporate network via the external pentest or starting from an assumed breach scenario.
 Internal pentests may also access isolated systems with no internet access whatsoever, which usually requires our physical presence at the client's facility.
 ```
+<br>
 
 ### Types of Penetration Testing
 ```
