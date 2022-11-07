@@ -12,10 +12,11 @@ gobuster --help
 
 ```
 ```
-$ gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt
+$ gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location} -x php,html
 
 dir : Uses directory/file enumeration mode.
 --url : The target URL.
 --wordlist : Path to the wordlist.
 -x : File extension(s) to search for.
 ```
+/usr/share/wordlists/dirbuster/directory-list-2.3-small.txt 
