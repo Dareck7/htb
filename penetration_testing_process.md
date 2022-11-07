@@ -27,7 +27,7 @@ We identify the technologies in use and learn how the web application functions.
   
 ### 3. Vulnerability Assessment 	
 ``` diff
-With this information, we can look for known vulnerabilities (Nessus, Qualys, OpenVAS) and investigate questionable features that may allow for unintended actions.
+With this information, we can look for known vulnerabilities and investigate questionable features that may allow for unintended actions.
 
 @@ Suppose we found an open TCP port 2121 on a host during the information-gathering phase : @@
 
@@ -35,6 +35,8 @@ With this information, we can look for known vulnerabilities (Nessus, Qualys, Op
     - Is this a standard port? - No, because these are between 0-1023, aka well-known or system ports
     - Are there any numbers in this port number that look familiar? - Yes, TCP port 21 (FTP). From our experience, we will get to know many standard ports and their services, which administrators often try to disguise, but often use "easy to remember" alternatives.
     - Based on our guess, we can try to connect to the service using Netcat or an FTP client and try to establish a connection to confirm or disprove our guess.
+  
+- Nessus, Qualys, OpenVAS
 ```
 - <p>Find vulnerability disclosures and CVEs :</p>
   
