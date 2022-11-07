@@ -97,6 +97,14 @@ After all, the Lateral Movement stage aims to move through the internal network.
 ```diff
 Finally, we are ready to show off our hard work and help our client, and those responsible for remediation efficiently reproduce our results.
 We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
+
+@@ The more practical version of a PoC is a script or code that automatically exploits the vulnerabilities found. @@
+
+Therefore, working against our script instead of with it and modifying and securing the systems so that our script no longer works does not mean that the information obtained from the script cannot be obtained in another way.
+- Show how fixing one flaw will break the chain, but the other flaws will still exist.
+For example, if a user uses the password Password123, the underlying vulnerability is not the password but the password policy.
+
+- High quality stands for high standards, which we should emphasize through our remediation recommendations.
 ```
 <br>
 
