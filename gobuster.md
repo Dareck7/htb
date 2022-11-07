@@ -14,16 +14,8 @@ gobuster --help
 ```
 $ gobuster dir --url http://{target_IP}/ --wordlist {wordlist_location}/directory-list-2.3-small.txt
 
-dir : Specify that we wish to do web directory enumeration.
---url : Specify the web address of the target machine that runs the HTTP server.
---wordlist : Specify the wordlist that we want to use.
-
-
-
-Available commands:
-  dir         Uses directory/file enumeration mode
-
-Flags:
-  -w, --wordlist string   Path to the wordlist
-  -x string    File extension(s) to search for (dir mode only)
+dir : Uses directory/file enumeration mode.
+--url : The target URL.
+--wordlist : Path to the wordlist.
+-x : File extension(s) to search for.
 ```
