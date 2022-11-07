@@ -53,7 +53,7 @@ With this information, we can look for known vulnerabilities and investigate que
 ```diff
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 
-@@ Complexity represents the effort of exploiting a specific vulnerability. @@
+- Complexity represents the effort of exploiting a specific vulnerability.
 ``` 
 We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
 
