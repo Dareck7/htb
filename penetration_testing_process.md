@@ -15,7 +15,7 @@ The first step is to create all the necessary documents in the pre-engagement ph
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. 
 We identify the technologies in use and learn how the web application functions.
   
-@@ We can obtain the necessary information relevant to us in many different ways : @@
+We can obtain the necessary information relevant to us in many different ways :
   
     - Open-Source Intelligence (OSINT)
     - Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)
@@ -29,7 +29,7 @@ We identify the technologies in use and learn how the web application functions.
 ``` diff
 With this information, we can look for known vulnerabilities and investigate questionable features that may allow for unintended actions.
 
-@@ Suppose we found an open TCP port 2121 on a host during the information-gathering phase : @@
+  Suppose we found an open TCP port 2121 on a host during the information-gathering phase :
 
     - a TCP port 2121. - TCP already means that this service is connection-oriented.
     - Is this a standard port? - No, because these are between 0-1023, aka well-known or system ports
@@ -53,7 +53,7 @@ With this information, we can look for known vulnerabilities and investigate que
 ```diff
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 
-- Complexity represents the effort of exploiting a specific vulnerability.
++ Complexity represents the effort of exploiting a specific vulnerability.
 ``` 
 We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
 
@@ -66,12 +66,12 @@ If we find sensitive information during this stage, we try to escalate our privi
 From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. 
 We want to get the privileges of the root (on Linux-based systems) or the domain administrator/local administrator/SYSTEM (on Windows-based systems).
 
-- Persistence is maintaining access to the exploited host.
++ Persistence is maintaining access to the exploited host.
 
 Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and Response (EDR) help detect and prevent data exfiltration. 
 In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
 
-@@ What is the name of the security regulation for credit card payments a company must adhere to? PCI-DSS @@
++ What is the name of the security regulation for credit card payments a company must adhere to? PCI-DSS
 ```
 <br>
 
@@ -80,16 +80,14 @@ In addition to Network Monitoring, many companies use encryption on hard drives 
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered.
 The goal here is that we test what an attacker could do within the entire network.
 
-- One of the most common examples is ransomware. 
-
-If a system in the corporate network is infected with ransomware, it can spread across the entire network. 
+One of the most common examples is ransomware. If a system in the corporate network is infected with ransomware, it can spread across the entire network. 
 Some pivoting techniques (access inaccessible systems via an intermediary system) allow us to use the exploited host as a proxy and perform all the scans from our attack machine or VM. In this way, we make non-routable networks can still be reached. 
 
 Another standard method is to use our existing credentials on other systems. We can use the tool Responder to intercept NTLMv2 hashes. 
 If we can intercept a hash from an administrator, then we can use the pass-the-hash technique to log in as that administrator (in most cases) on multiple hosts and servers.
 After all, the Lateral Movement stage aims to move through the internal network.
 
-@@ There are many ways to protect against lateral movement, including network (micro) segmentation, threat monitoring, IPS/IDS, EDR, etc. @@
+There are many ways to protect against lateral movement, including network (micro) segmentation, threat monitoring, IPS/IDS, EDR, etc.
 ```
 <br>
 
@@ -98,7 +96,7 @@ After all, the Lateral Movement stage aims to move through the internal network.
 Finally, we are ready to show off our hard work and help our client, and those responsible for remediation efficiently reproduce our results.
 We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 
-@@ The more practical version of a PoC is a script or code that automatically exploits the vulnerabilities found. @@
+The more practical version of a PoC is a script or code that automatically exploits the vulnerabilities found.
 
 Therefore, working against our script instead of with it and modifying and securing the systems so that our script no longer works does not mean that the information obtained from the script cannot be obtained in another way.
 Show how fixing one flaw will break the chain, but the other flaws will still exist.
@@ -114,12 +112,12 @@ Finally, the documentation is completed and presented to our client as a formal 
 Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any needed support to personnel tasked with remediating our findings.
 Once testing is complete, we should perform any necessary cleanup, such as deleting tools/scripts uploaded to target systems, reverting any (minor) configuration changes we may have made, etc.
 
-- We should not keep any Personal Identifiable Information (PII), potentially incriminating info, or other sensitive data we came across throughout testing.
++ We should not keep any Personal Identifiable Information (PII), potentially incriminating info, or other sensitive data we came across throughout testing.
 
 We should not be implementing changes ourselves or even giving precise remediation advice (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code).
 We should ensure that any systems used to connect to the client's systems or process data have been wiped or destroyed and that any artifacts leftover from the engagement are stored securely (encrypted) per our firm's policy and per contractual obligations to our client.
 
-@@ What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFT @@
+What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? DRAFT
 ```
 <br>
 <br>
@@ -127,7 +125,7 @@ We should ensure that any systems used to connect to the client's systems or pro
 
 ### Testing Methods
 ``` diff
-- External Penetration Test
++ External Penetration Test
 
 Many pentests are performed from an external perspective or as an anonymous user on the Internet. 
 Most customers want to ensure that they are as protected as possible against attacks on their external network perimeter. 
@@ -137,7 +135,7 @@ They may ask for a stealthy or "hybrid" approach where we gradually become "nois
 Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.
 
 
-- Internal Penetration Test
++ Internal Penetration Test
 
 In contrast to an external pentest, an internal pentest is when we perform testing from within the corporate network. 
 This stage may be executed after successfully penetrating the corporate network via the external pentest or starting from an assumed breach scenario.
