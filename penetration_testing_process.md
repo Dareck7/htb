@@ -78,7 +78,7 @@ In addition to Network Monitoring, many companies use encryption on hard drives 
 ### 6. Lateral Movement 	
 ```diff
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered.
-@@ The goal here is that we test what an attacker could do within the entire network. @@
+The goal here is that we test what an attacker could do within the entire network.
 
 - One of the most common examples is ransomware. 
 
