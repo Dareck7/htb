@@ -1,4 +1,11 @@
 ### FTP (File Transfer Protocol)
+<br>
+The File Transfer Protocol (FTP) is a standard communication protocol used to transfer
+computer files from a server to a client on a computer network. FTP users may
+authenticate themselves with a clear-text sign-in protocol, generally using a username
+and password. However, they can connect anonymously if the server is configured to
+allow it.
+<br>
 
 ```diff
 sudo apt install ftp -y
