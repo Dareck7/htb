@@ -12,3 +12,8 @@ nmap -p- --min-rate 5000 -sV 10.129.136.91
   -p- : This flag scans for all TCP ports ranging from 0-65535
   --min-rate : This is used to specify the minimum number of packets Nmap should send per second; it speeds up the scan as the number goes higher
 ```
+
+Nmap uses a port-services database of well-known services in order to determine the service
+running on a particular port. It later also sends some service-specific requests to that port to
+determine the service version & any additional information about it.
+Thus, Nmap is mostly but not always correct about the service info for a particular port.
