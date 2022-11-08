@@ -140,5 +140,13 @@ john -w=/usr/share/wordlists/rockyou.txt hash.txt
 
   -w : wordlist to use for cracking the hash
 ```
+john will try each password from the given password list, encrypting the challenge with that password. If
+the result matches the response, then it knows it found the correct password. 
+
 5985/tcp WinRM for HTTP
 
+Because PowerShell isn't installed
+on Linux by default, we'll use a tool called Evil-WinRM which is made for this kind of scenario.
+```
+evil-winrm -i 10.129.136.91 -u administrator -p badminton
+```
