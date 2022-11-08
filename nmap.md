@@ -3,6 +3,7 @@
 
 ```diff
 nmap -p- --min-rate 5000 -sV {target_IP}
+
   -p-: This flag scans for all TCP ports ranging from 0-65535
   --min-rate: This is used to specify the minimum number of packets Nmap should send per second; it speeds up the scan as the number goes higher
   -sV: Enables version detection, which will detect what versions are running on what port.
