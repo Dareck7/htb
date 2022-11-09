@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "c5f21dc28fc34830",
+    "type": "split",
+    "children": [
+      {
+        "id": "e49c7c99dd8384e7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3ad2939fbb197f6b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Attacking Network Services/Banner Grabbing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e5591638da364cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB Labs/Three.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f449357de345dc13",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB Labs/Tier 0.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a54a2696492e9d3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ESGI - CentOS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2d866b9e43eaa34f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB Labs/Tier 0.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e79efce052b99dff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB Labs/Tier 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3134c20079888128",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB Labs/Tier 1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e8e6845968975746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "HTB Labs/Three.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 7
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5f6dbb55a4f0d1f7",
+    "type": "split",
+    "children": [
+      {
+        "id": "a8d2b049f6e87e74",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93920bfd1c5b53e2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "09108ecd79b597e3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "d79c96967d37532d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300.5
+  },
+  "right": {
+    "id": "95a65f9781c020fe",
+    "type": "split",
+    "children": [
+      {
+        "id": "599ad6e5c5d73a3c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb33c87a0f291756",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "HTB Labs/Three.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": false
+              }
+            }
+          },
+          {
+            "id": "b574020f140742d5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "HTB Labs/Three.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "30864ea5f9f2479d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "17b30e21c7d309af",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "HTB Labs/Three.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "93920bfd1c5b53e2",
+  "lastOpenFiles": [
+    "HTB Labs/Responder.md",
+    "HTB Labs/Three.md",
+    "HTB Labs/Tier 0.md",
+    "HTB Labs/Tier 1.md",
+    "Nmap.md",
+    "Folder Structure.md",
+    "Connecting to HTB VPN.md",
+    "Common Terms.md",
+    "Common Ports.md",
+    "Attacking Network Services/SNMP.md"
+  ]
+}
