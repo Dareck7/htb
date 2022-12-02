@@ -2,6 +2,18 @@
 
 <br>
 
+- [VPN Troubleshooting](#vpn-troubleshooting)
+
+    - [Still Connected to VPN](#still-connected-to-vpn)
+    - [Getting VPN Address](#getting-vpn-address)
+    - [Checking Routing Table](#checking-routing-table)
+    - [Pinging Gateway](#pinging-gateway)
+    - [How to delete a virtual interface](#how-to-delete-a-virtual-interface)
+
+- [Changing SSH Key and Password](#changing-ssh-key-and-password)
+
+<br>
+
 ## VPN Troubleshooting
 <br>
 
@@ -64,6 +76,15 @@ PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
 rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
 ```
 Finally, we can either attack an assigned target host on the `10.129.0.0/16` network or begin enumeration for live hosts.
+
+<br>
+
+### How to delete a virtual interface
+
+You can use `sudo ip link delete` to remove the interface:
+```
+Dareck7@htb[/htb]$ sudo ip link delete tun1
+```
 
 <br>
 <br>
