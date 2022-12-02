@@ -69,8 +69,9 @@ Finally, we can either attack an assigned target host on the `10.129.0.0/16` net
 <br>
 
 ## Changing SSH Key and Password
+<br>
 
-In case we start facing some issues with connecting to SSH servers or connecting to our machine from a remote server, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the ssh-keygen command, as follows:
+In case we start facing some issues with connecting to SSH servers or connecting to our machine from a remote server, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen command`, as follows:
 
 ```
 Dareck7@htb[/htb]$ ssh-keygen
