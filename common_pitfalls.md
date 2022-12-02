@@ -64,3 +64,8 @@ PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
 rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
 ```
 Finally, we can either attack an assigned target host on the `10.129.0.0/16` network or begin enumeration for live hosts.
+
+<br>
+<br>
+
+## Burp Suite Proxy Issues
