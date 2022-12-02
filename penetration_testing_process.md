@@ -6,8 +6,6 @@
 
 A penetration testing process is defined by successive steps and events performed by the penetration tester to find a path to the predefined objective.
 
-___
-
 <br>
 
 ## 1. Pre-Engagement
@@ -150,9 +148,7 @@ We should not be implementing changes ourselves or even giving precise remediati
 What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? `DRAFT`
 
 <br>
-
-___
-
+<br>
 <br>
 
 ## Testing Methods
@@ -160,20 +156,18 @@ ___
 
 ### External Penetration Test
 
-Many pentests are performed from an external perspective or as an anonymous user on the Internet. Most customers want to ensure that they are as protected as possible against attacks on their external network perimeter. We can perform testing from our own host (hopefully using a VPN connection to avoid our ISP blocking us) or from a VPS. 
+`Many pentests are performed from an external perspective or as an anonymous user on the Internet. Most customers want to ensure that they are as protected as possible against attacks on their external network perimeter. We can perform testing from our own host (hopefully using a VPN connection to avoid our ISP blocking us) or from a VPS.`
 
-Some clients will not care about stealth, while others will request that we proceed as quietly as possible and approach the target systems to avoid being banned by the firewalls and IDS/IPS systems and avoid triggering an alarm. They may ask for a stealthy or "hybrid" approach where we gradually become "noisier" to test their detection capabilities. Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.
+`Some clients will not care about stealth, while others will request that we proceed as quietly as possible and approach the target systems to avoid being banned by the firewalls and IDS/IPS systems and avoid triggering an alarm. They may ask for a stealthy or "hybrid" approach where we gradually become "noisier" to test their detection capabilities. Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.`
 <br>
 <br>
 
 ### Internal Penetration Test
 
-In contrast to an external pentest, an internal pentest is when we perform testing from within the corporate network. This stage may be executed after successfully penetrating the corporate network via the external pentest or starting from an assumed breach scenario. Internal pentests may also access isolated systems with no internet access whatsoever, which usually requires our physical presence at the client's facility.
+`In contrast to an external pentest, an internal pentest is when we perform testing from within the corporate network. This stage may be executed after successfully penetrating the corporate network via the external pentest or starting from an assumed breach scenario. Internal pentests may also access isolated systems with no internet access whatsoever, which usually requires our physical presence at the client's facility.`
 
 <br>
-
-___
-
+<br>
 <br>
 
 ## Types of Penetration Testing
