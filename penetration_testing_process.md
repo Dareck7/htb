@@ -2,13 +2,41 @@
 
 <br>
 
-**Infosec** -> Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
+- [Penetration Testing Process](#penetration-testing-process)
+   - [Pre-Engagement](#pre-engagement)
+   - [Information Gathering](#information-gathering)
+   - [Vulnerability Assessment](#vulnerability-assessment) 	
+   - [Exploitation ](#exploitation) 	
+   - [Post-Exploitation](#post-exploitation) 	
+   - [Lateral Movement](#lateral-movement) 	
+   - [Proof-of-Concept](#proof-of-concept) 	
+   - [Post-Engagement](#post-engagement) 	
+
+- [Testing Methods](#testing-methods)
+     - [External Penetration Test](external-penetration-test)
+     - [Internal Penetration Test](internal-penetration-test)
+
+- [Types of Penetration Testing](#types-of-penetration-testing)
+     - [Blackbox](#blackbox)
+     - [Greybox](#greybox)
+     - [Whitebox](#whitebox)
+     - [Red-Teaming](#red-teaming)
+     - [Purple-Teaming](#purple-teaming)
+
+<br>
+
+___
+
+<br>
+
+<img src="img/penetration_testing_process.png">
 
 A penetration testing process is defined by successive steps and events performed by the penetration tester to find a path to the predefined objective.
 
 <br>
+<br>
 
-## 1. Pre-Engagement
+## Pre-Engagement
 <br>
 The first step is to create all the necessary documents in the pre-engagement phase, discuss the assessment objectives, and clarify any questions.
 
@@ -17,7 +45,7 @@ The first step is to create all the necessary documents in the pre-engagement ph
 <br>
 <br>
 
-## 2. Information Gathering
+## Information Gathering
 <br>
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. We identify the technologies in use and learn how the web application functions.
 
@@ -34,8 +62,9 @@ Once the pre-engagement activities are complete, we investigate the company's ex
 
 <br>
 <br>
+<br>
 
-## 3. Vulnerability Assessment 	
+## Vulnerability Assessment 	
 <br>
 With this information, we can look for known vulnerabilities and investigate questionable features that may allow for unintended actions.
 
@@ -68,8 +97,9 @@ With this information, we can look for known vulnerabilities and investigate que
 
 <br>
 <br>
+<br>
 
-## 4. Exploitation 
+## Exploitation 
 <br>
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 <br>
@@ -83,7 +113,7 @@ We need to assess the probability of successfully executing a particular attack 
 <br>
 <br>
 
-## 5. Post-Exploitation
+## Post-Exploitation
 <br>
 Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. If we find sensitive information during this stage, we try to escalate our privileges (depending on the system and configurations). From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. We want to get the privileges of the root (on Linux-based systems) or the domain administrator/local administrator/SYSTEM (on Windows-based systems).
 <br>
@@ -99,7 +129,7 @@ Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and R
 <br>
 <br>
 
-## 6. Lateral Movement 	
+## Lateral Movement 	
 <br>
 If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered. The goal here is that we test what an attacker could do within the entire network.
 <br>
@@ -116,7 +146,7 @@ Another standard method is to use our existing credentials on other systems. We 
 <br>
 <br>
 
-## 7. Proof-of-Concept
+## Proof-of-Concept
 <br>
 Finally, we are ready to show off our hard work and help our client, and those responsible for remediation efficiently reproduce our results. We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 <br>
@@ -134,7 +164,7 @@ Therefore, working against our script instead of with it and modifying and secur
 <br>
 <br>
 
-## 8. Post-Engagement
+## Post-Engagement
 <br>
 Finally, the documentation is completed and presented to our client as a formal report deliverable. Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any needed support to personnel tasked with remediating our findings. Once testing is complete, we should perform any necessary cleanup, such as deleting tools/scripts uploaded to target systems, reverting any (minor) configuration changes we may have made, etc.
 <br>
@@ -156,39 +186,43 @@ What designation do we typically give a report when it is first delivered to a c
 
 ### External Penetration Test
 
-`Many pentests are performed from an external perspective or as an anonymous user on the Internet. Most customers want to ensure that they are as protected as possible against attacks on their external network perimeter. We can perform testing from our own host (hopefully using a VPN connection to avoid our ISP blocking us) or from a VPS.`
+Many pentests are performed from an external perspective or as an anonymous user on the Internet. Most customers want to ensure that they are as protected as possible against attacks on their `external network perimeter`. We can perform testing from our own host (hopefully using a VPN connection to avoid our ISP blocking us) or from a VPS.
 
-`Some clients will not care about stealth, while others will request that we proceed as quietly as possible and approach the target systems to avoid being banned by the firewalls and IDS/IPS systems and avoid triggering an alarm. They may ask for a stealthy or "hybrid" approach where we gradually become "noisier" to test their detection capabilities. Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.`
+Some clients will not care about `stealth`, while others will request that we proceed as quietly as possible and approach the target systems to avoid being banned by the firewalls and IDS/IPS systems and avoid triggering an alarm. They may ask for a stealthy or "hybrid" approach where we gradually become "noisier" to test their detection capabilities. Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.
 <br>
 <br>
 
 ### Internal Penetration Test
 
-`In contrast to an external pentest, an internal pentest is when we perform testing from within the corporate network. This stage may be executed after successfully penetrating the corporate network via the external pentest or starting from an assumed breach scenario. Internal pentests may also access isolated systems with no internet access whatsoever, which usually requires our physical presence at the client's facility.`
+In contrast to an external pentest, an internal pentest is when we perform testing from `within the corporate network`. This stage may be executed after successfully penetrating the corporate network via the external pentest or starting from an assumed breach scenario. Internal pentests may also access isolated systems with `no internet access` whatsoever, which usually requires our `physical presence` at the client's facility.
 
 <br>
 <br>
 <br>
 
 ## Types of Penetration Testing
+<br>
 
 ### Blackbox 
-- `Minimal. Only the essential information, such as IP addresses anddomains, is provided. The penetration tester must perform in-depth reconnaissance to learn about the target. This type of penetration test most simulates an actual attack but is not as comprehensive as other assessment types and could leave misconfigurations/vulnerabilities undiscovered.`
+- `Minimal`. Only the essential information, such as IP addresses anddomains, is provided. The penetration tester must perform `in-depth reconnaissance` to learn about the target. This type of penetration test most simulates an `actual attack` but is not as comprehensive as other assessment types and could leave misconfigurations/vulnerabilities undiscovered.
 
 ### Greybox 
-- `Extended. The tester is given a certain amount of information in advance. This may be a list of in-scope IP addresses/ranges, low-level credentials to a web application or Active Directory, or some application/network diagrams. This type of penetration test can simulate a malicious insider or see what an attacker can do with a low level of access. In this scenario, the tester will typically spend less time on reconnaissance and more time looking for misconfigurations and attempting exploitation.`
+- `Extended`. The tester is given `a certain amount` of information in advance. This may be a list of in-scope IP addresses/ranges, low-level credentials to a web application or Active Directory, or some application/network diagrams. This type of penetration test can simulate a malicious insider or see what an attacker can do with a low level of access. In this scenario, the tester will typically spend less time on reconnaissance and more time looking for misconfigurations and attempting exploitation.
 
 ### Whitebox 
-- `Maximum. Here everything is disclosed to us. This gives us an internal view of the entire structure, which allows us to prepare an attack using internal information. We may be given detailed configurations, admin credentials, web application source code, etc. This assessment type is highly comprehensive as the tester will have access to both sides of a target and perform a comprehensive analysis.`
+- `Maximum`. Here `everything` is disclosed to us. This gives us an internal view of the entire structure, which allows us to prepare an attack using internal information. We may be given detailed configurations, admin credentials, web application source code, etc. This assessment type is highly comprehensive as the tester will have access to both sides of a target and perform a comprehensive analysis.
 
 ### Red-Teaming 
-- `May include physical testing and social engineering, among other things. Can be combined with any of the above types.`
+- May include `physical testing and social engineering`, among other things. Can be combined with any of the above types.
 
 ### Purple-Teaming 
-- `It can be combined with any of the above types. However, it focuses on working closely with the defenders.`
+- It can be combined with any of the above types. However, it focuses on working closely `with the defenders`.
 
+<br>
 <br>
 <br>
 <br>
 
 The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest **TTPs**  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
+
+**Infosec** → Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
