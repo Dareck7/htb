@@ -63,17 +63,17 @@ Another way to check for connectivity is to use the command sudo `netstat -rn` t
 ### Pinging Gateway
 
 From here, we can see that we are connected to the `10.10.14.0/23` network on the `tun0` adapter and have access to the `10.129.0.0/16` network and can ping the gateway `10.10.14.1` to confirm access.
-```
-Dareck7@htb[/htb]$ ping -c4 10.10.14.1
-PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
-64 bytes from 10.10.14.1: icmp_seq=1 ttl=64 time=111 ms
-64 bytes from 10.10.14.1: icmp_seq=2 ttl=64 time=111 ms
-64 bytes from 10.10.14.1: icmp_seq=3 ttl=64 time=111 ms
-64 bytes from 10.10.14.1: icmp_seq=4 ttl=64 time=111 ms
-
---- 10.10.14.1 ping statistics ---
-4 packets transmitted, 4 received, 0% packet loss, time 3012ms
-rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
+```diff
+  Dareck7@htb[/htb]$ ping -c4 10.10.14.1
+  PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
+  64 bytes from 10.10.14.1: icmp_seq=1 ttl=64 time=111 ms
+  64 bytes from 10.10.14.1: icmp_seq=2 ttl=64 time=111 ms
+  64 bytes from 10.10.14.1: icmp_seq=3 ttl=64 time=111 ms
+  64 bytes from 10.10.14.1: icmp_seq=4 ttl=64 time=111 ms
+  
+  --- 10.10.14.1 ping statistics ---
++ 4 packets transmitted, 4 received, 0% packet loss, time 3012ms
+  rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
 ```
 Finally, we can either attack an assigned target host on the `10.129.0.0/16` network or begin enumeration for live hosts.
 
@@ -92,31 +92,9 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 ## Changing SSH Key and Password
 <br>
 
-In case we start facing some issues with connecting to SSH servers or connecting to our machine from a remote server, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen command`, as follows:
+By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
+In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen command`, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
 
 ```
 Dareck7@htb[/htb]$ ssh-keygen
-
-Generating public/private rsa key pair.
-Enter file in which to save the key (/home/parrot/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase):
-Enter same passphrase again:
-
-Your identification has been saved in /home/parrot/.ssh/id_rsa
-Our public key has been saved in /home/parrot/.ssh/id_rsa.pub
-The key fingerprint is:
-SHA256:...SNIP... parrot@parrot
-The key's randomart image is:
-+---[RSA 3072]----+
-|            o..  |
-|     ...SNIP     |
-|     ...SNIP     |
-|     ...SNIP     |
-|     ...SNIP     |
-|     ...SNIP     |
-|     ...SNIP     |
-|       + +oo+o   |
-+----[SHA256]-----+
 ```
-
-By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`). If we wanted to create an ssh key in a different directory, we could enter an absolute path for the key when prompted. We can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password.
