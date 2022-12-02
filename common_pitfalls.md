@@ -28,7 +28,7 @@ Dareck7@htb[/htb]$ ip -4 a show tun0
        valid_lft forever preferred_lft forever
  ```
  As long we get our IP back, then we should be connected to the VPN network.
- <br>
+ 
  <br>
  
  ### Checking Routing Table
