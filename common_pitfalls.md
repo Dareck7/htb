@@ -68,4 +68,33 @@ Finally, we can either attack an assigned target host on the `10.129.0.0/16` net
 <br>
 <br>
 
-## Burp Suite Proxy Issues
+## Changing SSH Key and Password
+
+In case we start facing some issues with connecting to SSH servers or connecting to our machine from a remote server, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the ssh-keygen command, as follows:
+
+```
+Dareck7@htb[/htb]$ ssh-keygen
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/parrot/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+
+Your identification has been saved in /home/parrot/.ssh/id_rsa
+Our public key has been saved in /home/parrot/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:...SNIP... parrot@parrot
+The key's randomart image is:
++---[RSA 3072]----+
+|            o..  |
+|     ...SNIP     |
+|     ...SNIP     |
+|     ...SNIP     |
+|     ...SNIP     |
+|     ...SNIP     |
+|     ...SNIP     |
+|       + +oo+o   |
++----[SHA256]-----+
+```
+
+By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`). If we wanted to create an ssh key in a different directory, we could enter an absolute path for the key when prompted. We can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password.
