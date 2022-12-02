@@ -194,8 +194,6 @@ ___
 
 ### Types of Penetration Testing
 
-<br>
-
 #### Blackbox 
 - `Minimal. Only the essential information, such as IP addresses anddomains, is provided.`
 
