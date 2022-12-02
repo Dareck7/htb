@@ -4,14 +4,6 @@
 
 ## VPN Issues
 
-<br>
-
-### Connecting to HTB VPN
-
-```bash
-sudo openvpn {filename}.ovpn
-```
-
 ### Still Connected to VPN
 
 The easiest method of checking if we have successfully connected to the VPN network is by checking whether we have `Initialization Sequence Completed` at the end of our VPN connection messages:
@@ -22,11 +14,11 @@ Dareck7@htb[/htb]$ sudo openvpn ./htb.ovpn
 
 Initialization Sequence Completed
 ```
+<br>
 
 ### Getting VPN Address
 
 Another way of checking whether we are connected to the VPN network is by checking our VPN `tun0` address, which we can find with the following command:
-<br>
 ```
 Dareck7@htb[/htb]$ ip -4 a show tun0
 
@@ -35,6 +27,7 @@ Dareck7@htb[/htb]$ ip -4 a show tun0
        valid_lft forever preferred_lft forever
  ```
  As long we get our IP back, then we should be connected to the VPN network.
+ <br>
  
  ### Checking Routing Table
 
