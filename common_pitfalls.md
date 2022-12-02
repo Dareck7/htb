@@ -92,9 +92,10 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 ## Changing SSH Key and Password
 <br>
 
-By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
 In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen command`, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
 
 ```
 Dareck7@htb[/htb]$ ssh-keygen
 ```
+
+By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
