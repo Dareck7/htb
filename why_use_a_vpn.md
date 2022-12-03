@@ -2,6 +2,12 @@
 
 <br>
 
+- [Connecting to HTB VPN](#connecting-to-htb-vpn)
+- [SSL VPN](#ssl-vpn)
+- [Client-based VPN](#client-based-vpn)
+
+<br>
+
 ### Connecting to HTB VPN
 <br>
 
