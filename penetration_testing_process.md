@@ -2,7 +2,8 @@
 
 <br>
 
-- [Penetration Testing Process](#penetration-testing-process)
+- [Penetration Testing Process](#penetration-testing-process)<br>
+
    - [Pre-Engagement](#pre-engagement)
    - [Information Gathering](#information-gathering)
    - [Vulnerability Assessment](#vulnerability-assessment) 	
@@ -12,16 +13,20 @@
    - [Proof-of-Concept](#proof-of-concept) 	
    - [Post-Engagement](#post-engagement) 	
 
-- [Testing Methods](#testing-methods)
-     - [External Penetration Test](external-penetration-test)
-     - [Internal Penetration Test](internal-penetration-test)
+- [Testing Methods](#testing-methods) <br>
 
-- [Types of Penetration Testing](#types-of-penetration-testing)
+     - [External Penetration Test](external-penetration-test)
+     - [Internal Penetration Test](internal-penetration-test)<br>
+
+- [Types of Penetration Testing](#types-of-penetration-testing)<br>
+
      - [Blackbox](#blackbox)
      - [Greybox](#greybox)
      - [Whitebox](#whitebox)
      - [Red-Teaming](#red-teaming)
      - [Purple-Teaming](#purple-teaming)
+
+- [Setting Up a Pentest Distro](#setting-up-a-pentest-distro)
 
 <br>
 
@@ -217,6 +222,27 @@ In contrast to an external pentest, an internal pentest is when we perform testi
 
 ### Purple-Teaming 
 - It can be combined with any of the above types. However, it focuses on working closely `with the defenders`.
+
+<br>
+<br>
+<br>
+
+## Setting Up a Pentest Distro
+<br>
+
+VMs on a hypervisor run isolated from the primary operating system, which offers a layer of isolation and protection between our production network and vulnerable networks, such as Hack The Box, or when connecting to client environments from a VM (though VM breakout vulnerabilities do arise from time to time).
+
+<br>
+
+## Folder Structure
+
+<br>
+
+<img src="img/folder_structure.png">
+
+<br>
+
+Here we have a folder for the client Acme Company with two assessments, **Internal Penetration Test (IPT)** and **External Penetration Test (EPT)**. Under each folder, we have subfolders for saving scan data, any relevant tools, logging output, scoping information (i.e., lists of IPs/networks to feed to our scanning tools), and an evidence folder that may contain any credentials retrieved during the assessment, any relevant data retrieved as well as screenshots.
 
 <br>
 <br>
