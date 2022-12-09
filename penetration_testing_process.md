@@ -2,16 +2,14 @@
 
 <br>
 
-- [Penetration Testing Process](#penetration-testing-process)<br>
-
-   - [Pre-Engagement](#pre-engagement)
-   - [Information Gathering](#information-gathering)
-   - [Vulnerability Assessment](#vulnerability-assessment) 	
-   - [Exploitation ](#exploitation) 	
-   - [Post-Exploitation](#post-exploitation) 	
-   - [Lateral Movement](#lateral-movement) 	
-   - [Proof-of-Concept](#proof-of-concept) 	
-   - [Post-Engagement](#post-engagement) 	
+- [Pre-Engagement](#pre-engagement)
+- [Information Gathering](#information-gathering)
+- [Vulnerability Assessment](#vulnerability-assessment) 	
+- [Exploitation ](#exploitation) 	
+- [Post-Exploitation](#post-exploitation) 	
+- [Lateral Movement](#lateral-movement) 	
+- [Proof-of-Concept](#proof-of-concept) 	
+- [Post-Engagement](#post-engagement) <br>
 
 - [Testing Methods](#testing-methods) <br>
 
