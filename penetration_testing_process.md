@@ -230,11 +230,11 @@ In contrast to an external pentest, an internal pentest is when we perform testi
 ## Setting Up a Pentest Distro
 <br>
 
-VMs on a hypervisor run isolated from the primary operating system, which offers a layer of isolation and protection between our production network and vulnerable networks, such as Hack The Box, or when connecting to client environments from a VM (though VM breakout vulnerabilities do arise from time to time).
+VMs on a hypervisor run `isolated` from the primary operating system, which offers a layer of isolation and protection between our production network and vulnerable networks, such as Hack The Box, or when connecting to client environments from a VM (though `VM breakout vulnerabilities` do arise from time to time).
 
 <br>
 
-## Folder Structure
+### Folder Structure
 
 <br>
 
