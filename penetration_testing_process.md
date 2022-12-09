@@ -15,8 +15,8 @@
 
 - [Testing Methods](#testing-methods) <br>
 
-     - [External Penetration Test](external-penetration-test)
-     - [Internal Penetration Test](internal-penetration-test)<br>
+     - [External Penetration Test](#external-penetration-test)
+     - [Internal Penetration Test](#internal-penetration-test)<br>
 
 - [Types of Penetration Testing](#types-of-penetration-testing)<br>
 
