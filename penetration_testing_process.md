@@ -1,7 +1,8 @@
 # Penetration Testing Process
 
 <br>
-- [Penetration Testing Process](#penetration-testing-process)
+
+- [Penetration Testing Process](#penetration-testing-process) 
      - [Pre-Engagement](#pre-engagement)
      - [Information Gathering](#information-gathering)
      - [Vulnerability Assessment](#vulnerability-assessment) 	
@@ -9,15 +10,13 @@
      - [Post-Exploitation](#post-exploitation) 	
      - [Lateral Movement](#lateral-movement) 	
      - [Proof-of-Concept](#proof-of-concept) 	
-     - [Post-Engagement](#post-engagement) <br>
-
-- [Testing Methods](#testing-methods) <br>
-
+     - [Post-Engagement](#post-engagement)
+     
+- [Testing Methods](#testing-methods) 
      - [External Penetration Test](#external-penetration-test)
-     - [Internal Penetration Test](#internal-penetration-test)<br>
+     - [Internal Penetration Test](#internal-penetration-test)
 
-- [Types of Penetration Testing](#types-of-penetration-testing)<br>
-
+- [Types of Penetration Testing](#types-of-penetration-testing)
      - [Blackbox](#blackbox)
      - [Greybox](#greybox)
      - [Whitebox](#whitebox)
