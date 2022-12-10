@@ -246,6 +246,6 @@ Here we have a folder for the client Acme Company with two assessments, `Interna
 <br>
 <br>
 
-The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest **TTPs**  (Tactics, Techniques, and Procedures) to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
+The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest `TTPs  (Tactics, Techniques, and Procedures)` to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
 
 **Infosec** → Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
