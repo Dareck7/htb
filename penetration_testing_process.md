@@ -25,10 +25,9 @@
 
 - [Setting Up a Pentest Distro](#setting-up-a-pentest-distro)
      - [Folder Structure](#folder-structure)
-     - [VPN Troubleshooting](#vpn-troubleshooting)
      - [Connecting to HTB VPN](#connecting-to-htb-vpn)
-     - [SSL VPN](#ssl-vpn)
-     - [Client-based VPN](#client-based-vpn)
+     - [VPN Troubleshooting](#vpn-troubleshooting)
+
 
 <br>
 <br>
@@ -271,11 +270,13 @@ Usage of a VPN service **does not** guarantee anonymity or privacy but is useful
 #### Client-based VPN 
 - `requires the use of client software` to establish the VPN connection. Once connected, the user's host will work mostly as if it were `connected directly` to the company network and will be able to access any resources (applications, hosts, subnets, etc.) allowed by the server configuration. Some corporate VPNs will provide employees with full access to the internal corporate network, while others will place users on a `specific segment` reserved for remote workers.
 
+<br>
+<br>
 
 ### VPN Troubleshooting
 <br>
 
-### Still Connected to VPN
+#### Still Connected to VPN
 
 The easiest method of checking if we have successfully connected to the VPN network is by checking whether we have `Initialization Sequence Completed` at the end of our VPN connection messages:
 ```diff
