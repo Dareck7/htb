@@ -24,11 +24,13 @@
      - [Purple-Teaming](#purple-teaming)
 
 - [Setting Up a Pentest Distro](#setting-up-a-pentest-distro)
+     - [Folder Structure](#folder-structure)
+     - [VPN Troubleshooting](#vpn-troubleshooting)
+     - [Connecting to HTB VPN](#connecting-to-htb-vpn)
+     - [SSL VPN](#ssl-vpn)
+     - [Client-based VPN](#client-based-vpn)
 
 <br>
-
-___
-
 <br>
 
 <img src="img/penetration_testing_process.png">
@@ -243,23 +245,11 @@ Here we have a folder for the client Acme Company with two assessments, `Interna
 
 <br>
 <br>
-<br>
-<br>
-
-## Why Use A VPN?
-
-<br>
-
-- [Connecting to HTB VPN](#connecting-to-htb-vpn)
-- [SSL VPN](#ssl-vpn)
-- [Client-based VPN](#client-based-vpn)
-
-<br>
 
 ### Connecting to HTB VPN
 <br>
 
-```diff
+```
 sudo openvpn {filename}.ovpn
 ```
 <br>
@@ -275,30 +265,14 @@ Usage of a VPN service **does not** guarantee anonymity or privacy but is useful
 
 <br>
 
-### SSL VPN
+#### SSL VPN
 - `uses the web browser as the VPN client`. The connection is established between the `browser` and an `SSL VPN gateway` can be configured to only allow access to web-based applications such as email and intranet sites, or even the internal network but without the need for the end user to install or use `any specialized software`.
 
-### Client-based VPN 
+#### Client-based VPN 
 - `requires the use of client software` to establish the VPN connection. Once connected, the user's host will work mostly as if it were `connected directly` to the company network and will be able to access any resources (applications, hosts, subnets, etc.) allowed by the server configuration. Some corporate VPNs will provide employees with full access to the internal corporate network, while others will place users on a `specific segment` reserved for remote workers.
 
 
-# Common Pitfalls
-
-<br>
-
-- [VPN Troubleshooting](#vpn-troubleshooting)
-
-    - [Still Connected to VPN](#still-connected-to-vpn)
-    - [Getting VPN Address](#getting-vpn-address)
-    - [Checking Routing Table](#checking-routing-table)
-    - [Pinging Gateway](#pinging-gateway)
-    - [How to delete a virtual interface](#how-to-delete-a-virtual-interface)
-
-- [Changing SSH Key and Password](#changing-ssh-key-and-password)
-
-<br>
-
-## VPN Troubleshooting
+### VPN Troubleshooting
 <br>
 
 ### Still Connected to VPN
