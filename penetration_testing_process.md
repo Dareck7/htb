@@ -71,7 +71,7 @@ Once the pre-engagement activities are complete, we investigate the company's ex
 
 ## Vulnerability Assessment 	
 <br>
-With this information, we can look for known vulnerabilities and investigate questionable features that may allow for unintended actions.
+With this information, we can look (Nessus, Qualys, OpenVAS) for known vulnerabilities and investigate questionable features that may allow for unintended actions.
 
 <br>
 <br>
