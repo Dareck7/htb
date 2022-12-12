@@ -388,18 +388,27 @@ Dareck7@htb[/htb]$ vim /etc/hosts
 ```
 Once we are finished editing a file, we can hit the escape key `esc` to get out of `insert mode`, back into `normal mode`. When we are in `normal mode`, we can use the following keys to perform some useful shortcuts:
 
-<img src="img/vim1.png">
-| Item         | Price     |
+| Command         | Description     |
 |--------------|-----------|
-| Juicy Apples | 1.99      |
-| Bananas      | **1.89**  |
+| x | Cut character     |
+| dw      | Cut word  |
+| dd      | Cut full line  |
+| yw      | Copy word |
+| yd      | Copy full line  |
+| p      | Paste |
 
 Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on.
 
 If we want to save a file or quit Vim, we have to press `:` to go into `command mode`.
 There are many commands available to us. The following are some of them:
 
-<img src="img/vim2.png">
+| Command         | Description     |
+|--------------|-----------|
+| :1 | Go to line number 1.     |
+| :w      | Write the file, save  |
+| :q     | Quit  |
+| :q!      | Quit without saving |
+| :wq    | Write and quit |
 
 This [cheatsheet](https://vimsheet.com/) is an excellent resource for further unlocking the power of Vim.
 
