@@ -122,9 +122,9 @@ Once we have successfully exploited the target, we jump into information gatheri
 
 **Persistence** is `maintaining access` to the exploited host.
 
-Security systems such as **Data Loss Prevention (DLP)** and **Endpoint Detection and Response (EDR)** help detect and prevent `data exfiltration`. In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
+Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and Response (EDR) help detect and prevent **data exfiltration**. In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
 
-+ What is the name of the security regulation for credit card payments a company must adhere to? `PCI-DSS`
++ What is the name of the `security regulation` for credit card payments a company must adhere to? `PCI-DSS`
 
 <br>
 <br>
