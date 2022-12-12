@@ -28,6 +28,7 @@
      - [Connecting to HTB VPN](#connecting-to-htb-vpn)
      - [VPN Troubleshooting](#vpn-troubleshooting)
      - [Changing SSH Key and Password](#changing-ssh-key-and-password)
+     - [Tmux & Vim](#tmux-&-vim)
 
 <br>
 <br>
@@ -356,6 +357,14 @@ Dareck7@htb[/htb]$ ssh-keygen
 ```
 
 By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
+
+<br>
+<br>
+<br>
+
+### Tmux & Vim
+<br>
+
 
 <br>
 <br>
