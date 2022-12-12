@@ -59,11 +59,11 @@ Once the pre-engagement activities are complete, we investigate the company's ex
 
 **We can obtain the necessary information relevant to us in many different ways:**
   
-- `Open-Source Intelligence (OSINT)`
-- `Infrastructure Enumeration → name servers, mail servers, web servers, cloud instances, and more`
-- `Service Enumeration`
-- `Host Enumeration`
-- `Pillaging → understanding the role of the system`
+- Open-Source Intelligence (OSINT)
+- Infrastructure Enumeration → name servers, mail servers, web servers, `cloud instances`, and more
+- Service Enumeration
+- Host Enumeration
+- Pillaging → understanding the `role` of the system
 
 <br>
 <br>
@@ -105,7 +105,7 @@ Once we have found potential vulnerabilities, we prepare our exploit code, tools
 <br>
 <br>
 
-`Complexity represents the effort of exploiting a specific vulnerability.`
+**Complexity** represents the `effort` of exploiting a specific vulnerability.
 
 We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
 
@@ -115,13 +115,14 @@ We need to assess the probability of successfully executing a particular attack 
 
 ## Post-Exploitation
 <br>
-Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. If we find sensitive information during this stage, we try to escalate our privileges (depending on the system and configurations). From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. We want to get the privileges of the root (on Linux-based systems) or the domain administrator/local administrator/SYSTEM (on Windows-based systems).
-<br>
+
+Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. If we find sensitive information during this stage, we try to `escalate our privileges`. From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. We want to get the privileges of the `root` (on `Linux-based` systems) or the domain `administrator/local`, `administrator/SYSTEM` (on `Windows-based` systems).
+
 <br>
 
-`Persistence is maintaining access to the exploited host.`
+**Persistence** is `maintaining access` to the exploited host.
 
-Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and Response (EDR) help detect and prevent data exfiltration. In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
+Security systems such as **Data Loss Prevention (DLP)** and **Endpoint Detection and Response (EDR)** help detect and prevent `data exfiltration`. In addition to Network Monitoring, many companies use encryption on hard drives to prevent external parties from viewing such information.
 
 + What is the name of the security regulation for credit card payments a company must adhere to? `PCI-DSS`
 
