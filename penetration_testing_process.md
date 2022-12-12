@@ -394,7 +394,7 @@ Once we are finished editing a file, we can hit the escape key `esc` to get out 
 | dw      | Cut word  |
 | dd      | Cut full line  |
 | yw      | Copy word |
-| yd      | Copy full line  |
+| yy      | Copy full line  |
 | p      | Paste |
 
 Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on.
