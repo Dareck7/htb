@@ -84,12 +84,7 @@ With this information, we can look for known vulnerabilities and investigate que
 
 <br>
 
-```diff
-@@ Nessus, Qualys, OpenVAS @@
-```
-<br>
-
-**Find vulnerability disclosures and CVEs**
+**Find vulnerability disclosures and CVEs:**
 <br>
 
 - [CVEdetails](https://www.cvedetails.com/)
