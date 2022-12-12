@@ -379,6 +379,18 @@ We can also split into horizontal panes by hitting the prefix and then `[SHIFT +
 We can switch between panes by hitting the prefix and then the left or right arrows for horizontal switching or the up or down arrows for vertical switching. The commands above cover some basic tmux usage. It is a powerful tool and can be used for many things, including logging, which is very important during any technical engagement. This [cheatsheet](https://tmuxcheatsheet.com/) is a very handy reference.
 
 <br>
+
+#### Using Vim
+
+Once we open a file, we are in read-only `normal mode`, which allows us to navigate and read the file. To edit the file, we hit `i` to enter `insert mode`, shown by the "`-- INSERT --`" at the bottom of Vim.
+```
+Dareck7@htb[/htb]$ vim /etc/hosts
+```
+Once we are finished editing a file, we can hit the escape key `esc` to get out of `insert mode`, back into `normal mode`. When we are in `normal mode`, we can use the following keys to perform some useful shortcuts:
+
+<img src="img/vim1.png">
+
+<br>
 <br>
 <br>
 <br>
