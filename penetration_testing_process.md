@@ -150,6 +150,7 @@ There are many ways to protect against lateral movement, including `network (mic
 
 ## Proof-of-Concept
 <br>
+
 Finally, we are ready to show off our hard work and help our client, and those responsible for `remediation` efficiently reproduce our results. We create a proof-of-concept that `proves` that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 <br>
 <br>
@@ -168,14 +169,16 @@ High quality stands for `high standards`, which we should emphasize through our 
 
 ## Post-Engagement
 <br>
-Finally, the documentation is completed and presented to our client as a formal report deliverable. Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any needed support to personnel tasked with remediating our findings. Once testing is complete, we should perform any necessary cleanup, such as deleting tools/scripts uploaded to target systems, reverting any (minor) configuration changes we may have made, etc.
-<br>
+
+Finally, the documentation is completed and presented to our client as a `formal report deliverable`. Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any `needed support` to personnel tasked with remediating our `findings`. Once testing is complete, we should perform any necessary `cleanup`, such as deleting tools/scripts uploaded to target systems, reverting any (minor) configuration changes we may have made, etc.
+
 <br>
 
-`We should not keep any Personal Identifiable Information (PII), potentially incriminating info, or other sensitive data we came across throughout testing.`
+We should not keep any `Personal Identifiable Information` (PII), potentially incriminating info, or other sensitive data we came across throughout testing.
+
 <br>
 
-We should not be implementing changes ourselves or even giving precise remediation advice (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code). We should ensure that any systems used to connect to the client's systems or process data have been wiped or destroyed and that any artifacts leftover from the engagement are stored securely (encrypted) per our firm's policy and per contractual obligations to our client.
+**We should not be implementing changes ourselves or even giving precise remediation advice** (i.e., for SQL Injection, we may say "sanitize user input" but not give the client a rewritten piece of code). We should ensure that any systems used to connect to the client's systems or process data `have been wiped` or `destroyed` and that any artifacts leftover from the engagement are stored securely (encrypted) per our firm's policy and per `contractual obligations` to our client.
 
 What designation do we typically give a report when it is first delivered to a client for a chance to review and comment? `DRAFT`
 
