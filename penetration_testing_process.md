@@ -371,7 +371,7 @@ We can start it by entering `tmux` as our command. The default key to input tmux
 In order to open a new window in tmux, we can hit the prefix 'i.e. `[CTRL + B]`' and then hit `C`. 
 We see the numbered windows at the bottom. We can switch to each window by hitting the prefix and then inputting the window number, like 0 or 1. 
 
-<img src="img/tmux_sessions.png">
+<img src="img/tmux.png">
 
 We can also split a window vertically into panes by hitting the prefix and then `[SHIFT + %]`.
 We can also split into horizontal panes by hitting the prefix and then `[SHIFT + "]`.
