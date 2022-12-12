@@ -261,7 +261,7 @@ Usage of a VPN service **does not** guarantee anonymity or privacy but is useful
 
 <br>
 
-<img src="img/vpn.png">
+<img src="img/vpn_diagram.png">
 
 <br>
 
