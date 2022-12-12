@@ -390,6 +390,13 @@ Once we are finished editing a file, we can hit the escape key `esc` to get out 
 
 <img src="img/vim1.png">
 
+Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on.
+
+If we want to save a file or quit Vim, we have to press `:` to go into `command mode`.
+There are many commands available to us. The following are some of them:
+
+<img src="img/vim2.png">
+
 <br>
 <br>
 <br>
