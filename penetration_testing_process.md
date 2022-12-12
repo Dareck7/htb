@@ -212,13 +212,13 @@ In contrast to an external pentest, an internal pentest is when we perform testi
 - `Minimal`. Only the essential information, such as IP addresses anddomains, is provided. The penetration tester must perform `in-depth reconnaissance` to learn about the target. This type of penetration test most simulates an `actual attack` but is not as comprehensive as other assessment types and could leave misconfigurations/vulnerabilities undiscovered.
 
 ### Greybox 
-- `Extended`. The tester is given `a certain amount` of information in advance. This may be a list of in-scope IP addresses/ranges, low-level credentials to a web application or Active Directory, or some application/network diagrams. This type of penetration test can simulate a malicious insider or see what an attacker can do with a low level of access. In this scenario, the tester will typically spend less time on reconnaissance and more time looking for misconfigurations and attempting exploitation.
+- `Extended`. The tester is given `a certain amount` of information in advance. This may be a list of in-scope IP addresses/ranges, low-level credentials to a web application or Active Directory, or some application/network diagrams. This type of penetration test can simulate a malicious insider or see what an attacker can do with a `low level of access`. In this scenario, the tester will typically `spend less time` on reconnaissance and more time looking for misconfigurations and attempting exploitation.
 
 ### Whitebox 
-- `Maximum`. Here `everything` is disclosed to us. This gives us an internal view of the entire structure, which allows us to prepare an attack using internal information. We may be given detailed configurations, admin credentials, web application source code, etc. This assessment type is highly comprehensive as the tester will have access to both sides of a target and perform a comprehensive analysis.
+- `Maximum`. Here `everything` is disclosed to us. This gives us an internal view of the entire structure, which allows us to prepare an attack using internal information. We may be given detailed configurations, admin credentials, web application source code, etc. This assessment type is highly comprehensive as the tester will have access to `both sides` of a target and perform a comprehensive analysis.
 
 ### Red-Teaming 
-- May include `physical testing and social engineering`, among other things. Can be combined with any of the above types.
+- May include `physical testing` and `social engineering`, among other things. Can be combined with any of the above types.
 
 ### Purple-Teaming 
 - It can be combined with any of the above types. However, it focuses on working closely `with the defenders`.
