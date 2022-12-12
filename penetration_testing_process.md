@@ -397,6 +397,8 @@ There are many commands available to us. The following are some of them:
 
 <img src="img/vim2.png">
 
+This [cheatsheet](https://vimsheet.com/) is an excellent resource for further unlocking the power of Vim.
+
 <br>
 <br>
 <br>
