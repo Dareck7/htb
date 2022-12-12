@@ -254,7 +254,6 @@ Here we have a folder for the client *Acme Company* with two assessments, `Inter
 sudo openvpn {filename}.ovpn
 ```
 <br>
-<br>
 
 We can use a VPN service and connect to a VPN server in another part of our country or another region of the world to obscure our browsing traffic or `disguise` our public IP address. Using a VPN service comes with the risk that the provider is not doing what they are saying and are logging all data. 
 
