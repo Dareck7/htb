@@ -76,7 +76,7 @@ With this information, we can look (Nessus, Qualys, OpenVAS) for known vulnerabi
 <br>
 <br>
 
-**We found an open TCP port 2121 on a host during the information-gathering phase:**
+*We found an `open TCP port 2121` on a host during the information-gathering phase.*
 
 - a `TCP port 2121`. - TCP already means that this service is `connection-oriented`.
 - `Is this a standard port?` - No, because these are between `0-1023`, aka well-known or system ports.
