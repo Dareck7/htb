@@ -150,17 +150,17 @@ There are many ways to protect against lateral movement, including `network (mic
 
 ## Proof-of-Concept
 <br>
-Finally, we are ready to show off our hard work and help our client, and those responsible for remediation efficiently reproduce our results. We create a proof-of-concept that proves that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
+Finally, we are ready to show off our hard work and help our client, and those responsible for `remediation` efficiently reproduce our results. We create a proof-of-concept that `proves` that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
 <br>
 <br>
 
-`The more practical version of a PoC is a script or code that automatically exploits the vulnerabilities found.`
+The more `practical` version of a PoC is a script or code that `automatically exploits` the vulnerabilities found.
 <br>
 
 Therefore, working against our script instead of with it and modifying and securing the systems so that our script no longer works does not mean that the information obtained from the script cannot be obtained in another way. Show how fixing one flaw will break the chain, but the other flaws will still exist. For example, if a user uses the password Password123, the underlying vulnerability is not the password but the password policy.
 <br>
 <br>
-`High quality stands for high standards, which we should emphasize through our remediation recommendations.`
+High quality stands for `high standards`, which we should emphasize through our `remediation recommendations`.
 
 <br>
 <br>
