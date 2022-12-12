@@ -389,6 +389,10 @@ Dareck7@htb[/htb]$ vim /etc/hosts
 Once we are finished editing a file, we can hit the escape key `esc` to get out of `insert mode`, back into `normal mode`. When we are in `normal mode`, we can use the following keys to perform some useful shortcuts:
 
 <img src="img/vim1.png">
+| Item         | Price     |
+|--------------|-----------|
+| Juicy Apples | 1.99      |
+| Bananas      | **1.89**  |
 
 Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on.
 
