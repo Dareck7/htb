@@ -60,10 +60,10 @@ Once the pre-engagement activities are complete, we investigate the company's ex
 **We can obtain the necessary information relevant to us in many different ways:**
   
 - `Open-Source Intelligence (OSINT)`
-- `Infrastructure Enumeration (name servers, mail servers, web servers, cloud instances, and more)`
+- `Infrastructure Enumeration → name servers, mail servers, web servers, cloud instances, and more`
 - `Service Enumeration`
 - `Host Enumeration`
-- `Pillaging (understanding the role of the system)`
+- `Pillaging → understanding the role of the system`
 
 <br>
 <br>
