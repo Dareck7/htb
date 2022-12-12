@@ -286,7 +286,7 @@ Dareck7@htb[/htb]$ sudo openvpn ./htb.ovpn
 
 ...SNIP...
 
-- Initialization Sequence Completed
++ Initialization Sequence Completed
 ```
 <br>
 
@@ -315,8 +315,8 @@ Another way to check for connectivity is to use the command sudo `netstat -rn` t
   Kernel IP routing table
   Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
   0.0.0.0         192.168.195.2   0.0.0.0         UG        0 0          0 eth0
-- 10.10.14.0      0.0.0.0         255.255.254.0   U         0 0          0 tun0
-- 10.129.0.0      10.10.14.1      255.255.0.0     UG        0 0          0 tun0
+  10.10.14.0      0.0.0.0         255.255.254.0   U         0 0          0 tun0
++ 10.129.0.0      10.10.14.1      255.255.0.0     UG        0 0          0 tun0
   192.168.1.0     0.0.0.0         255.255.255.0   U         0 0          0 eth0
 ```
 <br>
@@ -333,7 +333,7 @@ From here, we can see that we are connected to the `10.10.14.0/23` network on th
   64 bytes from 10.10.14.1: icmp_seq=4 ttl=64 time=111 ms
   
   --- 10.10.14.1 ping statistics ---
-- 4 packets transmitted, 4 received, 0% packet loss, time 3012ms
++ 4 packets transmitted, 4 received, 0% packet loss, time 3012ms
   rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
 ```
 Finally, we can either attack an assigned target host on the `10.129.0.0/16` network or begin enumeration for live hosts.
