@@ -31,6 +31,7 @@
 
 <br>
 <br>
+<br>
 
 <img src="img/penetration_testing_process.png">
 
@@ -360,6 +361,9 @@ Dareck7@htb[/htb]$ ssh-keygen
 
 By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
 
+<br>
+<br>
+<br>
 
 The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest `TTPs  (Tactics, Techniques, and Procedures)` to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
 
