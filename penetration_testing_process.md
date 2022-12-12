@@ -193,7 +193,7 @@ What designation do we typically give a report when it is first delivered to a c
 
 Many pentests are performed from an external perspective or as an anonymous user on the Internet. Most customers want to ensure that they are as protected as possible against attacks on their `external network perimeter`. We can perform testing from our own host (hopefully using a VPN connection to avoid our ISP blocking us) or from a VPS.
 
-Some clients will not care about `stealth`, while others will request that we proceed as quietly as possible and approach the target systems to avoid being banned by the firewalls and IDS/IPS systems and avoid triggering an alarm. They may ask for a stealthy or "hybrid" approach where we gradually become "noisier" to test their detection capabilities. Ultimately our goal here is to access external-facing hosts, obtain sensitive data, or gain access to the internal network.
+Some clients will not care about `stealth`, while others will request that we proceed `as quietly as possible` and approach the target systems to avoid being banned by the firewalls and IDS/IPS systems and `avoid triggering an alarm`. They may ask for a stealthy or "hybrid" approach where we gradually become "noisier" to test their detection capabilities. Ultimately our goal here is to access `external-facing hosts`, obtain sensitive data, or gain access to the internal network.
 <br>
 <br>
 
