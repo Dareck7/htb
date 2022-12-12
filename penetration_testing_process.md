@@ -306,7 +306,7 @@ Dareck7@htb[/htb]$ ip -4 a show tun0
  
  #### Checking Routing Table
 
-Another way to check for connectivity is to use the command sudo `netstat -rn` to view our routing table:
+Another way to check for connectivity is to use the command `sudo netstat -rn` to view our routing table:
 ```diff
   Dareck7@htb[/htb]$ sudo netstat -rn
 
@@ -342,7 +342,7 @@ Finally, we can either attack an assigned target host on the `10.129.0.0/16` net
 
 #### How to delete a virtual interface
 
-You can use `sudo ip link delete` to remove an interface:
+You can use `sudo ip link delete <interface>` to remove an interface:
 ```
 Dareck7@htb[/htb]$ sudo ip link delete tun1
 ```
