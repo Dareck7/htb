@@ -274,7 +274,6 @@ Usage of a VPN service **does not** guarantee anonymity or privacy but is useful
 <br>
 
 ### VPN Troubleshooting
-<br>
 
 #### Still Connected to VPN
 
@@ -288,7 +287,7 @@ Dareck7@htb[/htb]$ sudo openvpn ./htb.ovpn
 ```
 <br>
 
-### Getting VPN Address
+#### Getting VPN Address
 
 Another way of checking whether we are connected to the VPN network is by checking our VPN `tun0` address, which we can find with the following command:
 ```
@@ -302,7 +301,7 @@ Dareck7@htb[/htb]$ ip -4 a show tun0
  
  <br>
  
- ### Checking Routing Table
+ #### Checking Routing Table
 
 Another way to check for connectivity is to use the command sudo `netstat -rn` to view our routing table:
 ```diff
