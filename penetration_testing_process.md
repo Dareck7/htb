@@ -255,7 +255,7 @@ sudo openvpn {filename}.ovpn
 ```
 <br>
 
-We can use a VPN service and connect to a VPN server in another part of our country or another region of the world to obscure our browsing traffic or `disguise` our public IP address. Using a VPN service comes with the risk that the provider is not doing what they are saying and are logging all data. 
+We can use a VPN service and connect to a VPN server in another region of the world to obscure our browsing traffic or `disguise` our public IP address. Using a VPN service comes with the risk that the provider is not doing what they are saying and are logging all data. 
 
 Usage of a VPN service **does not** guarantee anonymity or privacy but is useful for `bypassing` certain network/firewall restrictions or when connected to a possible hostile network (i.e., a public airport wireless network). A VPN service should never be used with the thought that it will protect us from the consequences of performing nefarious activities.
 
