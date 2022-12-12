@@ -349,6 +349,7 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 
 <br>
 <br>
+<br>
 
 ### Changing SSH Key and Password
 <br>
@@ -361,6 +362,7 @@ Dareck7@htb[/htb]$ ssh-keygen
 
 By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
 
+<br>
 <br>
 <br>
 <br>
