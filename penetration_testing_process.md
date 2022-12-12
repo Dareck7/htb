@@ -342,7 +342,7 @@ Finally, we can either attack an assigned target host on the `10.129.0.0/16` net
 
 #### How to delete a virtual interface
 
-You can use `sudo ip link delete` to remove the interface:
+You can use `sudo ip link delete` to remove an interface:
 ```
 Dareck7@htb[/htb]$ sudo ip link delete tun1
 ```
