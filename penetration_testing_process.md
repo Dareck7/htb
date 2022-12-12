@@ -52,13 +52,13 @@ The first step is to create all the necessary documents in the pre-engagement ph
 
 ## Information Gathering
 <br>
-Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. We identify the technologies in use and learn how the web application functions.
+
+Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. We identify the `technologies in use` and learn how the web application functions.
 
 <br>
-<br>
 
-**We can obtain the necessary information relevant to us in many different ways:**
-  
+We can obtain the necessary information relevant to us in many different ways:
+
 - Open-Source Intelligence (OSINT)
 - Infrastructure Enumeration → name servers, mail servers, web servers, `cloud instances`, and more
 - Service Enumeration
@@ -71,9 +71,9 @@ Once the pre-engagement activities are complete, we investigate the company's ex
 
 ## Vulnerability Assessment 	
 <br>
+
 With this information, we can look (Nessus, Qualys, OpenVAS) for known vulnerabilities and investigate questionable features that may allow for unintended actions.
 
-<br>
 <br>
 
 *We found an **open TCP port 2121** on a host during the information-gathering phase.*
