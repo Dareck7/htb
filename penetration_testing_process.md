@@ -139,7 +139,7 @@ One of the most common examples is ransomware. If a system in the corporate netw
 <br>
 <br>
 
-Another standard method is to use our `existing credentials` on other systems. We can use the tool `Responder` to intercept `NTLMv2 hashes`. If we can intercept a hash from an administrator, then we can use the `pass-the-hash` technique to log in as that administrator (in most cases) on multiple hosts and servers. After all, the Lateral Movement stage aims to move through the internal network.
+Another standard method is to use our `existing credentials` on other systems. We can use the tool `Responder` to intercept **NTLMv2 hashes**. If we can intercept a hash from an administrator, then we can use the `pass-the-hash` technique to log in as that administrator (in most cases) on multiple hosts and servers. After all, the Lateral Movement stage aims to move through the internal network.
 
 There are many ways to protect against lateral movement, including `network (micro) segmentation`, threat monitoring, IPS/IDS, EDR, etc.
 
