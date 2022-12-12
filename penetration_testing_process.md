@@ -272,8 +272,10 @@ Usage of a VPN service **does not** guarantee anonymity or privacy but is useful
 
 <br>
 <br>
+<br>
 
 ### VPN Troubleshooting
+<br>
 
 #### Still Connected to VPN
 
@@ -312,13 +314,13 @@ Another way to check for connectivity is to use the command sudo `netstat -rn` t
   Kernel IP routing table
   Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
   0.0.0.0         192.168.195.2   0.0.0.0         UG        0 0          0 eth0
-+ 10.10.14.0      0.0.0.0         255.255.254.0   U         0 0          0 tun0
-+ 10.129.0.0      10.10.14.1      255.255.0.0     UG        0 0          0 tun0
+- 10.10.14.0      0.0.0.0         255.255.254.0   U         0 0          0 tun0
+- 10.129.0.0      10.10.14.1      255.255.0.0     UG        0 0          0 tun0
   192.168.1.0     0.0.0.0         255.255.255.0   U         0 0          0 eth0
 ```
 <br>
 
-### Pinging Gateway
+#### Pinging Gateway
 
 From here, we can see that we are connected to the `10.10.14.0/23` network on the `tun0` adapter and have access to the `10.129.0.0/16` network and can ping the gateway `10.10.14.1` to confirm access.
 ```diff
@@ -330,14 +332,14 @@ From here, we can see that we are connected to the `10.10.14.0/23` network on th
   64 bytes from 10.10.14.1: icmp_seq=4 ttl=64 time=111 ms
   
   --- 10.10.14.1 ping statistics ---
-+ 4 packets transmitted, 4 received, 0% packet loss, time 3012ms
+- 4 packets transmitted, 4 received, 0% packet loss, time 3012ms
   rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
 ```
 Finally, we can either attack an assigned target host on the `10.129.0.0/16` network or begin enumeration for live hosts.
 
 <br>
 
-### How to delete a virtual interface
+#### How to delete a virtual interface
 
 You can use `sudo ip link delete` to remove the interface:
 ```
@@ -347,7 +349,7 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 <br>
 <br>
 
-## Changing SSH Key and Password
+### Changing SSH Key and Password
 <br>
 
 In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen command`, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
