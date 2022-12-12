@@ -28,7 +28,7 @@
      - [Connecting to HTB VPN](#connecting-to-htb-vpn)
      - [VPN Troubleshooting](#vpn-troubleshooting)
      - [Changing SSH Key and Password](#changing-ssh-key-and-password)
-     - [Tmux & Vim](#tmux-&-vim)
+     - [Basic Tools](#basic-tools)
 
 <br>
 <br>
@@ -362,7 +362,7 @@ By default, SSH keys are stored in the `.ssh` folder within our home folder (for
 <br>
 <br>
 
-### Tmux & Vim
+### Basic Tools
 <br>
 
 #### Using Tmux
