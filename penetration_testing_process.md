@@ -27,7 +27,7 @@
      - [Folder Structure](#folder-structure)
      - [Connecting to HTB VPN](#connecting-to-htb-vpn)
      - [VPN Troubleshooting](#vpn-troubleshooting)
-          - [Still Connected to VPN](#still-connected-to-vpn)
+     - [Changing SSH Key and Password](#changing-ssh-key-and-password)
 
 <br>
 <br>
