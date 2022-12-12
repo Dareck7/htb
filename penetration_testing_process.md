@@ -132,6 +132,7 @@ Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and R
 
 ## Lateral Movement 	
 <br>
+
 If other servers and hosts in the internal network are `in scope`, we then try to move through the network and access other hosts and servers using the information we have gathered. The goal here is that we test what an attacker could do within the entire network.
 <br>
 <br>
