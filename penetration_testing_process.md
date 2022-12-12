@@ -132,14 +132,14 @@ Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and R
 
 ## Lateral Movement 	
 <br>
-If other servers and hosts in the internal network are in scope, we then try to move through the network and access other hosts and servers using the information we have gathered. The goal here is that we test what an attacker could do within the entire network.
+If other servers and hosts in the internal network are `in scope`, we then try to move through the network and access other hosts and servers using the information we have gathered. The goal here is that we test what an attacker could do within the entire network.
 <br>
 <br>
 One of the most common examples is ransomware. If a system in the corporate network is infected with ransomware, it can spread across the entire network. Some `pivoting techniques` (access inaccessible systems via an intermediary system) allow us to use the exploited host as a proxy and perform all the scans from our attack machine or VM. In this way, we make non-routable networks can still be reached. 
 <br>
 <br>
 
-Another standard method is to use our `existing credentials` on other systems. We can use the tool `Responder` to intercept NTLMv2 hashes. If we can intercept a hash from an administrator, then we can use the `pass-the-hash` technique to log in as that administrator (in most cases) on multiple hosts and servers. After all, the Lateral Movement stage aims to move through the internal network.
+Another standard method is to use our `existing credentials` on other systems. We can use the tool `Responder` to intercept `NTLMv2 hashes`. If we can intercept a hash from an administrator, then we can use the `pass-the-hash` technique to log in as that administrator (in most cases) on multiple hosts and servers. After all, the Lateral Movement stage aims to move through the internal network.
 
 There are many ways to protect against lateral movement, including `network (micro) segmentation`, threat monitoring, IPS/IDS, EDR, etc.
 
