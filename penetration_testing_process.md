@@ -392,7 +392,7 @@ We see the numbered windows at the bottom.
 
 #### Using Vim
 
-<img src="img/vim.png">
+<img src="img/vim2.png">
 
 | Command      | Description    |
 |--------------|----------------|
