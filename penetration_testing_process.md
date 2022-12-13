@@ -392,6 +392,8 @@ We see the numbered windows at the bottom.
 
 #### Using Vim
 
+<img src="img/vim.png">
+
 | Command      | Description    |
 |--------------|----------------|
 | `vim file`   | open file with vim |
