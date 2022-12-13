@@ -390,8 +390,6 @@ We see the numbered windows at the bottom.
 <br>
 <br>
 
-<img src="img/vim.png">
-
 #### Using Vim
 
 | Command      | Description    |
