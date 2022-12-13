@@ -354,12 +354,10 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 ### Changing SSH Key and Password
 <br>
 
-In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen command`, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
-
+In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen` command, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
 ```
 Dareck7@htb[/htb]$ ssh-keygen
 ```
-
 By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
 
 <br>
@@ -371,48 +369,47 @@ By default, SSH keys are stored in the `.ssh` folder within our home folder (for
 
 #### Using Tmux
 
-We can start it by entering `tmux` as our command. The default key to input tmux commands prefix is `[CTRL + B]`. 
-In order to open a new window in tmux, we can hit the prefix 'i.e. `[CTRL + B]`' and then hit `C`. 
-We see the numbered windows at the bottom. We can switch to each window by hitting the prefix and then inputting the window number, like 0 or 1. 
+The commands below cover some basic `tmux` usage. It is a powerful tool and can be used for many things, including logging, which is very important during any technical engagement. This [cheatsheet](https://tmuxcheatsheet.com/) is a very handy reference. 
 
 <img src="img/tmux.png">
 
-We can also split a window vertically into panes by hitting the prefix and then `[SHIFT + %]`.
-We can also split into horizontal panes by hitting the prefix and then `[SHIFT + "]`.
+We see the numbered windows at the bottom.
 
-We can switch between panes by hitting the prefix and then the left or right arrows for horizontal switching or the up or down arrows for vertical switching. The commands above cover some basic tmux usage. It is a powerful tool and can be used for many things, including logging, which is very important during any technical engagement. This [cheatsheet](https://tmuxcheatsheet.com/) is a very handy reference.
+<br>
 
+| Command      | Description |
+|--------------|-------------|
+| `tmux`       | Start tmux  |
+| `ctrl+b`     | default prefix |
+| `prefix c`   | new window |
+| `prefix 1`   | switch to window (1) |
+| `prefix shift+%` | split pane vertically |
+| `prefix shift+"` | split pane horizontally |
+| `prefix ->` | switch to the right pane |
+
+<br>
 <br>
 
 #### Using Vim
 
-Once we open a file, we are in read-only `normal mode`, which allows us to navigate and read the file. To edit the file, we hit `i` to enter `insert mode`, shown by the "`-- INSERT --`" at the bottom of Vim.
-```
-Dareck7@htb[/htb]$ vim /etc/hosts
-```
-Once we are finished editing a file, we can hit the escape key `esc` to get out of `insert mode`, back into `normal mode`. When we are in `normal mode`, we can use the following keys to perform some useful shortcuts:
+| Command      | Description    |
+|--------------|----------------|
+| `vim file`   | open file with vim |
+| `esc+i`      | enter insert mode  |
+| `esc`        | back to normal mode |
+| `x` 	     | Cut character |
+| `dw` 	     | Cut word |
+|`dd` 	|Cut full line |
+|`yw` 	|Copy word |
+|`yy` 	|Copy full line |
+|`p`  	|Paste |
+|`:1` 	|Go to line number 1. |
+|`:w` 	|Write the file 'i.e. save' |
+|`:q` 	|Quit |
+|`:q!` 	|Quit without saving |
+|`:wq` 	|Write and quit |
 
-| Command         | Description     |
-|--------------|-----------|
-| x | Cut character     |
-| dw      | Cut word  |
-| dd      | Cut full line  |
-| yw      | Copy word |
-| yy      | Copy full line  |
-| p      | Paste |
-
-Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on.
-
-If we want to save a file or quit Vim, we have to press `:` to go into `command mode`.
-There are many commands available to us. The following are some of them:
-
-| Command         | Description     |
-|--------------|-----------|
-| :1 | Go to line number 1.     |
-| :w      | Write the file, save  |
-| :q     | Quit  |
-| :q!      | Quit without saving |
-| :wq    | Write and quit |
+Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on - If we want to save a file or quit Vim, we have to press `:` to go into `command mode`.
 
 This [cheatsheet](https://vimsheet.com/) is an excellent resource for further unlocking the power of Vim.
 
