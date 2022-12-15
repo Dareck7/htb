@@ -34,6 +34,8 @@
 <br>
 <br>
 
+## Penetration Testing Process
+
 <img src="img/penetration_testing_process.png">
 
 A penetration testing process is defined by successive steps and events performed by the penetration tester to find a path to the predefined objective.
@@ -41,7 +43,7 @@ A penetration testing process is defined by successive steps and events performe
 <br>
 <br>
 
-## Pre-Engagement
+### Pre-Engagement
 <br>
 The first step is to create all the necessary documents in the pre-engagement phase, discuss the assessment objectives, and clarify any questions.
 
@@ -50,7 +52,7 @@ The first step is to create all the necessary documents in the pre-engagement ph
 <br>
 <br>
 
-## Information Gathering
+### Information Gathering
 <br>
 
 Once the pre-engagement activities are complete, we investigate the company's existing website we have been assigned to assess. We identify the `technologies in use` and learn how the web application functions.
@@ -69,7 +71,7 @@ We can obtain the necessary information relevant to us in many different ways:
 <br>
 <br>
 
-## Vulnerability Assessment 	
+### Vulnerability Assessment 	
 <br>
 
 With this information, we can look (Nessus, Qualys, OpenVAS) for known vulnerabilities and investigate questionable features that may allow for unintended actions.
@@ -99,7 +101,7 @@ With this information, we can look (Nessus, Qualys, OpenVAS) for known vulnerabi
 <br>
 <br>
 
-## Exploitation 
+### Exploitation 
 <br>
 Once we have found potential vulnerabilities, we prepare our exploit code, tools, and environment and test the webserver for these potential vulnerabilities.
 <br>
@@ -113,7 +115,7 @@ We need to assess the probability of successfully executing a particular attack 
 <br>
 <br>
 
-## Post-Exploitation
+### Post-Exploitation
 <br>
 
 Once we have successfully exploited the target, we jump into information gathering and examine the webserver from the inside. If we find sensitive information during this stage, we try to `escalate our privileges`. From the inside (local) perspective, we have many more possibilities and alternatives to access certain information that is relevant to us. We want to get the privileges of the `root` (on `Linux-based` systems) or the domain `administrator/local`, `administrator/SYSTEM` (on `Windows-based` systems).
@@ -130,7 +132,7 @@ Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and R
 <br>
 <br>
 
-## Lateral Movement 	
+### Lateral Movement 	
 <br>
 
 If other servers and hosts in the internal network are `in scope`, we then try to move through the network and access other hosts and servers using the information we have gathered. The goal here is that we test what an attacker could do within the entire network.
@@ -148,7 +150,7 @@ There are many ways to protect against lateral movement, including `network (mic
 <br>
 <br>
 
-## Proof-of-Concept
+### Proof-of-Concept
 <br>
 
 Finally, we are ready to show off our hard work and help our client, and those responsible for `remediation` efficiently reproduce our results. We create a proof-of-concept that `proves` that these vulnerabilities exist and potentially even automate the individual steps that trigger these vulnerabilities.
@@ -167,7 +169,7 @@ High quality stands for `high standards`, which we should emphasize through our 
 <br>
 <br>
 
-## Post-Engagement
+### Post-Engagement
 <br>
 
 Finally, the documentation is completed and presented to our client as a `formal report deliverable`. Afterward, we may hold a report walkthrough meeting to clarify anything about our testing or results and provide any `needed support` to personnel tasked with remediating our `findings`. Once testing is complete, we should perform any necessary `cleanup`, such as deleting tools/scripts uploaded to target systems, reverting any (minor) configuration changes we may have made, etc.
