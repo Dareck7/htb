@@ -36,6 +36,8 @@
 
 ## Penetration Testing Process
 
+<br>
+
 <img src="img/penetration_testing_process.png">
 
 A penetration testing process is defined by successive steps and events performed by the penetration tester to find a path to the predefined objective.
