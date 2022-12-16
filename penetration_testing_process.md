@@ -251,7 +251,7 @@ Here we have a folder for the client *Acme Company* with two assessments, `Inter
 ### Connecting to HTB VPN
 <br>
 
-```
+```console
 sudo openvpn {filename}.ovpn
 ```
 <br>
@@ -294,7 +294,7 @@ Dareck7@htb[/htb]$ sudo openvpn ./htb.ovpn
 #### Getting VPN Address
 
 Another way of checking whether we are connected to the VPN network is by checking our VPN `tun0` address, which we can find with the following command:
-```
+```console
 Dareck7@htb[/htb]$ ip -4 a show tun0
 
 6: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN group default qlen 500
@@ -344,7 +344,7 @@ Finally, we can either attack an assigned target host on the `10.129.0.0/16` net
 #### How to delete a virtual interface
 
 You can use `sudo ip link delete <interface>` to remove an interface:
-```
+```console
 Dareck7@htb[/htb]$ sudo ip link delete tun1
 ```
 
@@ -356,7 +356,7 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 <br>
 
 In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen` command, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
-```
+```console
 Dareck7@htb[/htb]$ ssh-keygen
 ```
 By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
