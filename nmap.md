@@ -83,3 +83,8 @@ The TCP-SYN scan (`-sS`) is one of the default settings unless we have defined o
 <br>
 
 ## Host Discovery
+
+The most effective host discovery method is to use `ICMP echo requests`, which we will look into.
+
+
+
