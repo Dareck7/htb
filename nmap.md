@@ -7,6 +7,7 @@
     - [Syntax](#syntax)
     - [Scan Techniques](#scan-techniques)
 - [Host Discovery](#host-discovery)
+    - [Scan Network Range](#scan-network-range)
 
 <br>
 <br>
@@ -86,5 +87,6 @@ The TCP-SYN scan (`-sS`) is one of the default settings unless we have defined o
 
 The most effective host discovery method is to use `ICMP echo requests`, which we will look into.
 
+### Scan Network Range
 
 
