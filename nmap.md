@@ -6,6 +6,7 @@
     - [Nmap Architecture](#nmap-architecture)
     - [Syntax](#syntax)
     - [Scan Techniques](#scan-techniques)
+- [Host Discovery](#host-discovery)
 
 <br>
 
@@ -75,4 +76,8 @@ The TCP-SYN scan (`-sS`) is one of the default settings unless we have defined o
 - If the packet receives an `RST` flag, it is an indicator that the port is `closed`.
 - If Nmap does not receive a packet back, it will display it as `filtered`. Depending on the firewall configuration, certain packets may be dropped or ignored by the firewall.
 
+<br>
+<br>
+<br>
 
+## Host Discovery
