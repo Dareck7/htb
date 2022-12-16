@@ -48,7 +48,7 @@ The more information we have, the easier it will be for us to find `vectors of a
 
 ### Syntax
 
-```
+```console
 sudo nmap <scan types> <options> <target>
 ```
 
@@ -56,7 +56,7 @@ sudo nmap <scan types> <options> <target>
 
 ### Scan Techniques
 
-```
+```console
 Dareck7@htb[/htb]$ nmap
 
 <SNIP>
@@ -89,7 +89,7 @@ The TCP-SYN scan (`-sS`) is one of the default settings unless we have defined o
 The most effective host discovery method is to use `ICMP echo requests`, which we will look into.
 
 ### Scan Network Range
-```
+```console
 sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
 ```
 - `10.129.2.0/24` 	Target network range.
@@ -104,7 +104,7 @@ This scanning method works only if the firewalls of the hosts allow it.
 
 During an internal penetration test, it is not uncommon for us to be provided with an IP list with the hosts we need to test.
 
-```
+```console
 Dareck7@htb[/htb]$ cat hosts.lst
 
 10.129.2.4
@@ -116,7 +116,7 @@ Dareck7@htb[/htb]$ cat hosts.lst
 10.129.2.28
 ```
 If we use the same scanning technique on the predefined list, the command will look like this:
-```
+```console
 sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" " -f5
 ```
 - `-sn` 	Disables port scanning.
@@ -129,3 +129,8 @@ In this example, we see that only 3 of 7 hosts are active. Remember, this may me
 
 ### Scan Multiple IPs
 
+It can also happen that we only need to scan a small part of a network.
+
+```console
+sudo nmap -sn -oA tnet 10.129.2.18 10.129.2.19 10.129.2.20 | grep for | cut -d" " -f5
+```
