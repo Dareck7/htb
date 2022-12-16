@@ -88,5 +88,6 @@ The TCP-SYN scan (`-sS`) is one of the default settings unless we have defined o
 The most effective host discovery method is to use `ICMP echo requests`, which we will look into.
 
 ### Scan Network Range
-
-
+```
+nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
+```
