@@ -148,3 +148,6 @@ Before we scan a single host for open ports and its services, we first have to d
 ```console
  sudo nmap 10.129.2.18 -sn -oA host
  ```
+- `10.129.2.18` 	Performs defined scans against the target.
+`-sn` 	Disables port scanning.
+`-oA host` 	Stores the results in all formats starting with the name 'host'
