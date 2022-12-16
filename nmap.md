@@ -18,7 +18,6 @@
 The more information we have, the easier it will be for us to find `vectors of attack`. 
 
 <br>
-<br>
 
 ## Introduction to Nmap
 
