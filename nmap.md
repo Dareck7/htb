@@ -10,6 +10,7 @@
     - [Scan Network Range](#scan-network-range)
     - [Scan IP List](#scan-ip-list)
     - [Scan Multiple IPs](#scan-multiple-ips)
+    - [Scan Single IP](#scan-single-ip)
 
 <br>
 <br>
@@ -136,6 +137,11 @@ sudo nmap -sn -oA tnet 10.129.2.18 10.129.2.19 10.129.2.20 | grep for | cut -d" 
 ```
 
 If these IP addresses are next to each other, we can also define the range in the respective octet:
-```
+
+```console
 sudo nmap -sn -oA tnet 10.129.2.18-20 | grep for | cut -d" " -f5
 ```
+
+<br>
+
+### Scan Single IP
