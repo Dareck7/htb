@@ -146,8 +146,12 @@ sudo nmap -sn -oA tnet 10.129.2.18-20 | grep for | cut -d" " -f5
 Before we scan a single host for open ports and its services, we first have to determine if it is alive or not.
 
 ```console
- sudo nmap 10.129.2.18 -sn -oA host
- ```
+sudo nmap 10.129.2.18 -sn -oA host -PE --packet-trace
+```
 - `10.129.2.18` 	Performs defined scans against the target.
-`-sn` 	Disables port scanning.
-`-oA host` 	Stores the results in all formats starting with the name 'host'
+- `-sn` 	Disables port scanning.
+- `-oA host` 	Stores the results in all formats starting with the name 'host'
+- `-PE` 	Performs the ping scan by using 'ICMP Echo requests' against the target.
+- `--packet-trace` 	Shows all packets sent and received
+
+If we disable port scan (`-sn`), Nmap automatically ping scan with `ICMP Echo Requests` (`-PE`). Once such a request is sent, we usually expect an `ICMP reply` if the pinging host is alive. The more interesting fact is that our previous scans did not do that because before Nmap could send an ICMP echo request, it would send an ARP ping resulting in an ARP reply. We can confirm this with the "--packet-trace" option. To ensure that ICMP echo requests are sent, we also define the option (-PE) for this.
