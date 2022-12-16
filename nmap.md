@@ -100,3 +100,7 @@ sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
 10.129.2.28
 ```
 This scanning method works only if the firewalls of the hosts allow it.
+
+Tester le -oA tnet
+Ajout détails options -sn, -oA, network range
+Retirer la sortie ?
