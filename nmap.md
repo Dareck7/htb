@@ -35,6 +35,7 @@ The more information we have, the easier it will be for us to find `vectors of a
 - Response analysis
 - Identify open ports
 - Vulnerability assessment as well.
+
 <br>
 
 ### Nmap Architecture
@@ -44,6 +45,7 @@ The more information we have, the easier it will be for us to find `vectors of a
 - Service enumeration and detection
 - OS detection
 - Scriptable interaction with the target service (Nmap Scripting Engine)
+
 <br>
 
 ### Syntax
@@ -51,6 +53,7 @@ The more information we have, the easier it will be for us to find `vectors of a
 ```
 sudo nmap <scan types> <options> <target>
 ```
+
 <br>
 
 ### Scan Techniques
@@ -90,17 +93,14 @@ The most effective host discovery method is to use `ICMP echo requests`, which w
 ### Scan Network Range
 ```
 sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
-
-10.129.2.4
-10.129.2.10
-10.129.2.11
-10.129.2.18
-10.129.2.19
-10.129.2.20
-10.129.2.28
 ```
+- `10.129.2.0/24` 	Target network range.
+- `-sn` 	Disables port scanning.
+- `-oA tnet` 	Stores the results in all formats starting with the name 'tnet'.
+
 This scanning method works only if the firewalls of the hosts allow it.
 
-Tester le -oA tnet
-Ajout détails options -sn, -oA, network range
-Retirer la sortie ?
+<br>
+
+### Scan IP List
+
