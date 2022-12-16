@@ -91,3 +91,4 @@ The most effective host discovery method is to use `ICMP echo requests`, which w
 ```
 sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
 ```
+This scanning method works only if the firewalls of the hosts allow it.
