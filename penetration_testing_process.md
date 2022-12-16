@@ -254,6 +254,7 @@ Here we have a folder for the client *Acme Company* with two assessments, `Inter
 ```console
 sudo openvpn {filename}.ovpn
 ```
+
 <br>
 
 We can use a VPN service and connect to a VPN server in another region of the world to `obscure` our browsing traffic or `disguise` our public IP address. Using a VPN service comes with the risk that the provider is not doing what they are saying and are `logging all data`. 
@@ -344,6 +345,7 @@ Finally, we can either attack an assigned target host on the `10.129.0.0/16` net
 #### How to delete a virtual interface
 
 You can use `sudo ip link delete <interface>` to remove an interface:
+
 ```console
 Dareck7@htb[/htb]$ sudo ip link delete tun1
 ```
@@ -356,9 +358,11 @@ Dareck7@htb[/htb]$ sudo ip link delete tun1
 <br>
 
 In case we start facing some issues with connecting to SSH servers, we may want to renew or change our SSH key and password to make sure they are not causing any issues. We can do this with the `ssh-keygen` command, as follows (we can encrypt our SSH key with a password when prompted or keep it empty if we do not want to use a password):
+
 ```console
 Dareck7@htb[/htb]$ ssh-keygen
 ```
+
 By default, SSH keys are stored in the `.ssh` folder within our home folder (for example,` /home/htb-student/.ssh`).
 
 <br>
