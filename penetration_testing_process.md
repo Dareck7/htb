@@ -28,7 +28,6 @@
      - [Basic Tools](#basic-tools)
 
 <br>
-<br>
 
 ## Penetration Testing Process
 
