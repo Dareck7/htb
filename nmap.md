@@ -9,13 +9,10 @@
 - [Host Discovery](#host-discovery)
     - [Scan Network Range](#scan-network-range)
     - [Scan IP List](#scan-ip-list)
+    - [Scan Multiple IPs](#scan-multiple-ips)
 
 <br>
 <br>
-<br>
-
-<img src="img/nmap.png">
-
 <br>
 
 **Enumeration** is collecting as much information as possible.<br>
@@ -127,3 +124,8 @@ sudo nmap -sn -oA tnet -iL hosts.lst | grep for | cut -d" " -f5
 - `-iL` 	Performs defined scans against targets in provided 'hosts.lst' list.
 
 In this example, we see that only 3 of 7 hosts are active. Remember, this may mean that the other hosts ignore the default ICMP echo requests because of their firewall configurations. Since Nmap does not receive a response, it marks those hosts as `inactive`.
+
+<br>
+
+### Scan Multiple IPs
+
