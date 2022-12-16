@@ -142,3 +142,9 @@ sudo nmap -sn -oA tnet 10.129.2.18-20 | grep for | cut -d" " -f5
 <br>
 
 ### Scan Single IP
+
+Before we scan a single host for open ports and its services, we first have to determine if it is alive or not.
+
+```console
+ sudo nmap 10.129.2.18 -sn -oA host
+ ```
