@@ -153,7 +153,9 @@ sudo nmap 10.129.2.18 -sn -oA host -PE --reason
 - `-oA host` 	Stores the results in all formats starting with the name 'host'
 - `-PE` 	Performs the ping scan by using 'ICMP Echo requests' against the target.
 - `--reason ` Displays the reason for specific result.
+- `--packet-trace` Shows all packets sent and received.
 
+<br>
 We see here that Nmap does indeed detect whether the host is alive or not through the `ARP request` and `ARP reply` alone. To disable ARP requests and scan our target with the desired `ICMP echo requests`, we can disable ARP pings by setting the "`--disable-arp-ping`" option.
 
 ```console
@@ -167,5 +169,3 @@ Host is up (0.086s latency).
 MAC Address: DE:AD:00:00:BE:EF
 Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
 ```
-
-- `--packet-trace` 	Shows all packets sent and received
