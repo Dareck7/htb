@@ -11,15 +11,18 @@
      - [Lateral Movement](#lateral-movement) 	
      - [Proof-of-Concept](#proof-of-concept) 	
      - [Post-Engagement](#post-engagement)
+     <br>
 - [Testing Methods](#testing-methods) 
      - [External Penetration Test](#external-penetration-test)
      - [Internal Penetration Test](#internal-penetration-test)
+     <br>
 - [Types of Penetration Testing](#types-of-penetration-testing)
      - [Blackbox](#blackbox)
      - [Greybox](#greybox)
      - [Whitebox](#whitebox)
      - [Red-Teaming](#red-teaming)
      - [Purple-Teaming](#purple-teaming)
+     <br>
 - [Setting Up a Pentest Distro](#setting-up-a-pentest-distro)
      - [Folder Structure](#folder-structure)
      - [Connecting to HTB VPN](#connecting-to-htb-vpn)
