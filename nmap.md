@@ -238,6 +238,51 @@ Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
 - `ttl=64 id=0 iplen=40 seq=0 win=0` 	Additional TCP Header parameters.
 
 <br>
+<br>
 
 ### Filtered Ports
 
+When a packet gets dropped, `Nmap` receives no response from our target, and by default, the retry rate (`--max-retries`) is set to 1. This means Nmap will resend the request to the target port to determine if the previous packet was not accidentally mishandled.
+
+```console
+Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -p 139 --packet-trace -n --disable-arp-ping -Pn
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:45 CEST
+SENT (0.0381s) TCP 10.10.14.2:60277 > 10.129.2.28:139 S ttl=47 id=14523 iplen=44  seq=4175236769 win=1024 <mss 1460>
+SENT (1.0411s) TCP 10.10.14.2:60278 > 10.129.2.28:139 S ttl=45 id=7372 iplen=44  seq=4175171232 win=1024 <mss 1460>
+Nmap scan report for 10.129.2.28
+Host is up.
+
+PORT    STATE    SERVICE
+139/tcp filtered netbios-ssn
+MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
+
+Nmap done: 1 IP address (1 host up) scanned in 2.06 seconds
+```
+- `10.129.2.28` 	Scans the specified target.
+- `-p 139` 	Scans only the specified port.
+- `--packet-trace` 	Shows all packets sent and received.
+- `-n` 	Disables DNS resolution.
+- `--disable-arp-ping` 	Disables ARP ping.
+- `-Pn` 	Disables ICMP Echo requests.
+
+<br>
+
+The case is different if the firewall `rejects` the packets.
+
+```console
+Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -p 445 --packet-trace -n --disable-arp-ping -Pn
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:55 CEST
+SENT (0.0388s) TCP 10.129.2.28:52472 > 10.129.2.28:445 S ttl=49 id=21763 iplen=44  seq=1418633433 win=1024 <mss 1460>
+RCVD (0.0487s) ICMP [10.129.2.28 > 10.129.2.28 Port 445 unreachable (type=3/code=3) ] IP [ttl=64 id=20998 iplen=72 ]
+Nmap scan report for 10.129.2.28
+Host is up (0.0099s latency).
+
+PORT    STATE    SERVICE
+445/tcp filtered microsoft-ds
+MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
+```
+As a response, we receive an `ICMP` reply with `type 3` and `error code 3`, which indicates that the desired host is unreachable. Nevertheless, if we know that the host is alive, we can strongly assume that the firewall on this port is rejecting the packets.
