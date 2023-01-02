@@ -319,3 +319,15 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 ```
+- `10.129.2.28` 	Scans the specified target.
+- `-sU` 	Performs a UDP scan.
+- `-Pn` 	Disables ICMP Echo requests.
+- `-n` 	Disables DNS resolution.
+- `--disable-arp-ping` 	Disables ARP ping.
+- `--packet-trace` 	Shows all packets sent and received.
+- `-p 137` 	Scans only the specified port.
+- `--reason` 	Displays the reason a port is in a particular state.
+
+<br>
+<br>
+<br>
