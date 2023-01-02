@@ -191,4 +191,34 @@ Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
 
 ### Discovering Open TCP Ports
 
-By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default. We can define the ports one by one (`-p 22,25,80,139,445`), by range (`-p 22-445`), by top ports (`--top-ports=10`) from the `Nmap` database that have been signed as most frequent, by scanning all ports (`-p-`) but also by defining a fast port scan, which contains top 100 ports (`-F`).
+By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default.<br>
+
+We can define the ports one by one (`-p 22,25,80,139,445`), by range (`-p 22-445`), by top ports (`--top-ports=10`) from the `Nmap` database that have been signed as most frequent, by scanning all ports (`-p-`) but also by defining a fast port scan, which contains top 100 ports (`-F`).
+
+#### Scanning Top 10 TCP Ports
+```console
+Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 --top-ports=10 
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:36 CEST
+Nmap scan report for 10.129.2.28
+Host is up (0.021s latency).
+
+PORT     STATE    SERVICE
+21/tcp   closed   ftp
+22/tcp   open     ssh
+23/tcp   closed   telnet
+25/tcp   open     smtp
+80/tcp   open     http
+110/tcp  open     pop3
+139/tcp  filtered netbios-ssn
+443/tcp  closed   https
+445/tcp  filtered microsoft-ds
+3389/tcp closed   ms-wbt-server
+MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.44 seconds
+```
+- `10.129.2.28` 	Scans the specified target.
+- `--top-ports=10` 	Scans the specified top ports that have been defined as most frequent.
+
+
