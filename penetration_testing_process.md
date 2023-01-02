@@ -326,11 +326,8 @@ By default, SSH keys are stored in the `.ssh` folder within our home folder (for
 
 #### Using Tmux
 
-The commands below cover some basic `tmux` usage. It is a powerful tool and can be used for many things, including logging, which is very important during any technical engagement. This [cheatsheet](https://tmuxcheatsheet.com/) is a very handy reference. 
+The commands below cover some basic `tmux` usage. It is a powerful tool and can be used for many things, including logging, which is very important during any technical engagement. We see the `numbered windows` at the bottom of the console. This [cheatsheet](https://tmuxcheatsheet.com/) is a very handy reference. 
 
-<img src="img/tmux.png">
-
-We see the numbered windows at the bottom.
 
 | Command      | Description |
 |--------------|-------------|
