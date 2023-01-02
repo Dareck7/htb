@@ -193,32 +193,29 @@ Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
 
 By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default.<br>
 
-We can define the ports one by one (`-p 22,25,80,139,445`), by range (`-p 22-445`), by top ports (`--top-ports=10`) from the `Nmap` database that have been signed as most frequent, by scanning all ports (`-p-`) but also by defining a fast port scan, which contains top 100 ports (`-F`).
+#### Nmap - Trace the Packets
 
-#### Scanning Top 10 TCP Ports
+If we trace the packets `Nmap` sends, we will see the `RST` flag on `TCP port 21` that our target sends back to us.
+
+
 ```console
-Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 --top-ports=10 
+Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -p 21 --packet-trace -Pn -n --disable-arp-ping
 
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:36 CEST
-Nmap scan report for 10.129.2.28
-Host is up (0.021s latency).
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:39 CEST
+SENT (0.0429s) TCP 10.10.14.2:63090 > 10.129.2.28:21 S ttl=56 id=57322 iplen=44  seq=1699105818 win=1024 <mss 1460>
+RCVD (0.0573s) TCP 10.129.2.28:21 > 10.10.14.2:63090 RA ttl=64 id=0 iplen=40  seq=0 win=0
+Nmap scan report for 10.11.1.28
+Host is up (0.014s latency).
 
-PORT     STATE    SERVICE
-21/tcp   closed   ftp
-22/tcp   open     ssh
-23/tcp   closed   telnet
-25/tcp   open     smtp
-80/tcp   open     http
-110/tcp  open     pop3
-139/tcp  filtered netbios-ssn
-443/tcp  closed   https
-445/tcp  filtered microsoft-ds
-3389/tcp closed   ms-wbt-server
+PORT   STATE  SERVICE
+21/tcp closed ftp
 MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
-Nmap done: 1 IP address (1 host up) scanned in 1.44 seconds
+Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
 ```
+
 - `10.129.2.28` 	Scans the specified target.
-- `--top-ports=10` 	Scans the specified top ports that have been defined as most frequent.
-
-
+- `-p 21` 	Scans only the specified port.
+- `--packet-trace` 	Shows all packets sent and received.
+- `-n` 	Disables DNS resolution.
+--disable-arp-ping 	Disables ARP ping.
