@@ -15,6 +15,8 @@
     - [Discovering Open TCP Ports](#discovering-open-tcp-ports)
     - [Filtered Ports](#filtered-ports)
     - [Discovering Open UDP Ports](#discovering-open-udp-ports)
+- [Saving the Results](#saving-the-results)
+    - [Different Formats](#different-formats)
 
 <br>
 
@@ -302,3 +304,23 @@ Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 <br>
 <br>
 <br>
+
+## Saving the Results
+
+### Different Formats
+
+- Normal output (`-oN`) with the `.nmap` file extension
+- Grepable output (`-oG`) with the `.gnmap` file extension
+- XML output (`-oX`) with the `.xml` file extension
+
+We can also specify the option (`-oA`) to save the results in all formats.
+```console
+sudo nmap 10.129.2.28 -p- -oA target
+```
+
+Next, we look at the different formats Nmap has created for us:
+```console
+Dareck7@htb[/htb]$ ls
+
+target.gnmap target.html  target.nmap
+```
