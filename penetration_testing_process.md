@@ -360,9 +360,7 @@ The commands below cover some basic `tmux` usage. It is a powerful tool and can 
 |`:q!` 	|Quit without saving |
 |`:wq` 	|Write and quit |
 
-Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on - If we want to save a file or quit Vim, we have to press `:` to go into `command mode`.
-
-This [cheatsheet](https://vimsheet.com/) is an excellent resource for further unlocking the power of Vim.
+Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on - If we want to save a file or quit Vim, we have to press `:` to go into `command mode`. This [cheatsheet](https://vimsheet.com/) is an excellent resource for further unlocking the power of Vim.
 
 <br>
 <br>
