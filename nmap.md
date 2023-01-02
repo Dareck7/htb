@@ -12,6 +12,7 @@
     - [Scan Multiple IPs](#scan-multiple-ips)
     - [Scan Single IP](#scan-single-ip)
 - [Host and Port Scanning](#host-and-port-scanning)
+    - [Discovering Open TCP Ports](#discovering-open-tcp-ports)
 
 <br>
 
@@ -186,3 +187,8 @@ Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
 | `open-filtered` | If we do not get a response for a specific port, `Nmap` will set it to that state. This indicates that a firewall or packet filter may protect the port. |
 | `closed-filtered` | This state only occurs in the **IP ID idle** scans and indicates that it was impossible to determine if the scanned port is closed or filtered by a firewall. |
 
+<br>
+
+### Discovering Open TCP Ports
+
+By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default. We can define the ports one by one (`-p 22,25,80,139,445`), by range (`-p 22-445`), by top ports (`--top-ports=10`) from the `Nmap` database that have been signed as most frequent, by scanning all ports (`-p-`) but also by defining a fast port scan, which contains top 100 ports (`-F`).
