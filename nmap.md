@@ -13,6 +13,7 @@
     - [Scan Single IP](#scan-single-ip)
 - [Host and Port Scanning](#host-and-port-scanning)
     - [Discovering Open TCP Ports](#discovering-open-tcp-ports)
+    - [Filtered Ports](#filtered-ports)
 
 <br>
 
@@ -235,3 +236,8 @@ Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
 - `10.10.14.2:63090` 	Shows our IPv4 address and the port that will be replied to.
 - `RA` 	RST and ACK flags of the sent TCP packet.
 - `ttl=64 id=0 iplen=40 seq=0 win=0` 	Additional TCP Header parameters.
+
+<br>
+
+### Filtered Ports
+
