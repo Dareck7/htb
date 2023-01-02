@@ -14,6 +14,7 @@
 - [Host and Port Scanning](#host-and-port-scanning)
     - [Discovering Open TCP Ports](#discovering-open-tcp-ports)
     - [Filtered Ports](#filtered-ports)
+    - [Discovering Open UDP Ports](#discovering-open-udp-ports)
 
 <br>
 
@@ -286,3 +287,35 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 Nmap done: 1 IP address (1 host up) scanned in 0.05 seconds
 ```
 As a response, we receive an `ICMP` reply with `type 3` and `error code 3`, which indicates that the desired host is unreachable. Nevertheless, if we know that the host is alive, we can strongly assume that the firewall on this port is rejecting the packets.
+
+<br>
+<br>
+
+### Discovering Open UDP Ports
+
+```console
+sudo nmap 10.129.2.28 -F -sU
+```
+- `10.129.2.28` 	Scans the specified target.
+- `-F` 	Scans top 100 ports.
+- `-sU` 	Performs a UDP scan.
+
+<br>
+
+We often do not get a response back because `Nmap` sends empty datagrams to the scanned UDP ports, and we do not receive any response. So we cannot determine if the UDP packet has arrived at all or not. If the UDP port is `open`, we only get a response if the application is configured to do so.
+
+```console
+Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -sU -Pn -n --disable-arp-ping --packet-trace -p 137 --reason 
+
+Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 16:15 CEST
+SENT (0.0367s) UDP 10.10.14.2:55478 > 10.129.2.28:137 ttl=57 id=9122 iplen=78
+RCVD (0.0398s) UDP 10.129.2.28:137 > 10.10.14.2:55478 ttl=64 id=13222 iplen=257
+Nmap scan report for 10.129.2.28
+Host is up, received user-set (0.0031s latency).
+
+PORT    STATE SERVICE    REASON
+137/udp open  netbios-ns udp-response ttl 64
+MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
+
+Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
+```
