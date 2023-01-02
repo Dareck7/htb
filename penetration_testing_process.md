@@ -263,34 +263,34 @@ Dareck7@htb[/htb]$ ip -4 a show tun0
  #### Checking Routing Table
 
 Another way to check for connectivity is to use the command `sudo netstat -rn` to view our routing table:
-```diff
-  Dareck7@htb[/htb]$ sudo netstat -rn
+```console
+Dareck7@htb[/htb]$ sudo netstat -rn
 
-  [sudo] password for user: 
+[sudo] password for user: 
 
-  Kernel IP routing table
-  Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
-  0.0.0.0         192.168.195.2   0.0.0.0         UG        0 0          0 eth0
-+ 10.10.14.0      0.0.0.0         255.255.254.0   U         0 0          0 tun0
-+ 10.129.0.0      10.10.14.1      255.255.0.0     UG        0 0          0 tun0
-  192.168.1.0     0.0.0.0         255.255.255.0   U         0 0          0 eth0
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         192.168.195.2   0.0.0.0         UG        0 0          0 eth0
+10.10.14.0      0.0.0.0         255.255.254.0   U         0 0          0 tun0
+10.129.0.0      10.10.14.1      255.255.0.0     UG        0 0          0 tun0
+192.168.1.0     0.0.0.0         255.255.255.0   U         0 0          0 eth0
 ```
 <br>
 
 #### Pinging Gateway
 
 From here, we can see that we are connected to the `10.10.14.0/23` network on the `tun0` adapter and have access to the `10.129.0.0/16` network and can ping the gateway `10.10.14.1` to confirm access.
-```diff
-  Dareck7@htb[/htb]$ ping -c4 10.10.14.1
-  PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
-  64 bytes from 10.10.14.1: icmp_seq=1 ttl=64 time=111 ms
-  64 bytes from 10.10.14.1: icmp_seq=2 ttl=64 time=111 ms
-  64 bytes from 10.10.14.1: icmp_seq=3 ttl=64 time=111 ms
-  64 bytes from 10.10.14.1: icmp_seq=4 ttl=64 time=111 ms
+```console
+Dareck7@htb[/htb]$ ping -c4 10.10.14.1
+PING 10.10.14.1 (10.10.14.1) 56(84) bytes of data.
+64 bytes from 10.10.14.1: icmp_seq=1 ttl=64 time=111 ms
+64 bytes from 10.10.14.1: icmp_seq=2 ttl=64 time=111 ms
+64 bytes from 10.10.14.1: icmp_seq=3 ttl=64 time=111 ms
+64 bytes from 10.10.14.1: icmp_seq=4 ttl=64 time=111 ms
   
-  --- 10.10.14.1 ping statistics ---
-+ 4 packets transmitted, 4 received, 0% packet loss, time 3012ms
-  rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
+--- 10.10.14.1 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3012ms
+rtt min/avg/max/mdev = 110.574/110.793/111.056/0.174 ms
 ```
 Finally, we can either attack an assigned target host on the `10.129.0.0/16` network or begin enumeration for live hosts.
 
