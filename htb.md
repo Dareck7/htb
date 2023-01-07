@@ -29,6 +29,12 @@
 
 <br>
 
+The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest `TTPs  (Tactics, Techniques, and Procedures)` to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
+
+**Infosec** → Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
+
+<br>
+
 ## Penetration Testing Process
 
 <br>
@@ -37,11 +43,6 @@
 
 A penetration testing process is defined by successive steps and events performed by the penetration tester to find a path to the predefined objective.
 
-The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest `TTPs  (Tactics, Techniques, and Procedures)` to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
-
-**Infosec** → Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
-
-<br>
 <br>
 
 ### Pre-Engagement
