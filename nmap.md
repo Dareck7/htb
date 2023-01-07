@@ -86,12 +86,12 @@ The most effective host discovery method is to use `ICMP echo requests`, which w
 
 ### Scan Network Range
 ```console
-sudo nmap 10.129.2.0/24 -sn -n -oA tnet | grep for | cut -d" " -f5 > hosts.lst
+sudo nmap 10.129.2.0/24 -sn -n -oN alive_hosts.txt | grep for | cut -d" " -f5 > hosts.lst
 ```
 - `10.129.2.0/24` 	Target network range.
 - `-sn` 	Disables port scanning.
 - `-n`      Disables DNS resolution.
-- `-oA tnet` 	Stores the results in all formats starting with the name 'tnet'.
+- `-oA alive_hosts.txt` 	Stores the results in all formats starting with the name 'alive_hosts.txt'.
 
 This scanning method works only if the firewalls of the hosts allow it.
 
