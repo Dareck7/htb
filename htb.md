@@ -1,7 +1,5 @@
 # HTB
 
-<br>
-
 - [Penetration Testing Process](#penetration-testing-process) 
      - [Pre-Engagement](#pre-engagement)
      - [Information Gathering](#information-gathering)
