@@ -37,6 +37,10 @@
 
 A penetration testing process is defined by successive steps and events performed by the penetration tester to find a path to the predefined objective.
 
+The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest `TTPs  (Tactics, Techniques, and Procedures)` to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
+
+**Infosec** → Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
+
 <br>
 <br>
 
@@ -44,7 +48,6 @@ A penetration testing process is defined by successive steps and events performe
 
 The first step is to create all the necessary documents in the pre-engagement phase, discuss the assessment objectives, and clarify any questions.
 
-<br>
 <br>
 
 ### Information Gathering
@@ -61,7 +64,6 @@ We can obtain the necessary information relevant to us in many different ways:
 - Host Enumeration
 - Pillaging → understanding the `role` of the system
 
-<br>
 <br>
 
 ### Vulnerability Assessment 	
@@ -85,7 +87,6 @@ With this information, we can look (Nessus, Qualys, OpenVAS) for known vulnerabi
 - [Vulners](https://vulners.com/) 
 
 <br>
-<br>
 
 ### Exploitation 
 
@@ -95,7 +96,6 @@ Once we have found potential vulnerabilities, we prepare our exploit code, tools
 
 We need to assess the probability of successfully executing a particular attack against the target. [CVSS Scoring](https://nvd.nist.gov/vuln-metrics/cvss) can help us here, using the [NVD calculator](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator) better to calculate the specific attacks and their probability of success.
 
-<br>
 <br>
 
 ### Post-Exploitation
@@ -109,7 +109,6 @@ Security systems such as Data Loss Prevention (DLP) and Endpoint Detection and R
 + What is the name of the `security regulation` for credit card payments a company must adhere to? `PCI-DSS`
 
 <br>
-<br>
 
 ### Lateral Movement 	
 
@@ -122,7 +121,6 @@ Another standard method is to use our `existing credentials` on other systems. W
 There are many ways to protect against lateral movement, including `network (micro) segmentation`, threat monitoring, IPS/IDS, EDR, etc.
 
 <br>
-<br>
 
 ### Proof-of-Concept
 
@@ -134,7 +132,6 @@ Therefore, working against our script instead of with it and modifying and secur
 
 High quality stands for `high standards`, which we should emphasize through our `remediation recommendations`.
 
-<br>
 <br>
 
 ### Post-Engagement
@@ -361,11 +358,3 @@ The commands below cover some basic `tmux` usage. It is a powerful tool and can 
 |`:wq` 	|Write and quit |
 
 Tip: We can multiply any command to run multiple times by adding a number before it. For example, `4yw` would copy 4 words instead of one, and so on - If we want to save a file or quit Vim, we have to press `:` to go into `command mode`. This [cheatsheet](https://vimsheet.com/) is an excellent resource for further unlocking the power of Vim.
-
-<br>
-<br>
-<br>
-
-The field of information technology changes rapidly. New attacks are discovered frequently, and we need to stay on top of the latest and greatest `TTPs  (Tactics, Techniques, and Procedures)` to be as effective as possible and provide our clients with the necessary information to help secure their environments from an ever-evolving threat landscape.
-
-**Infosec** → Protecting the "confidentiality, integrity, and availability of data," or the `CIA triad`.
