@@ -1,5 +1,4 @@
 # Nmap
-<br>
 
 - [Introduction to Nmap](#introduction-to-nmap)
     - [Use Cases](#use-cases)
@@ -38,8 +37,6 @@ The more information we have, the easier it will be for us to find `vectors of a
 - Identify open ports
 - Vulnerability assessment as well.
 
-<br>
-
 ### Nmap Architecture
 
 - Host discovery
@@ -48,15 +45,11 @@ The more information we have, the easier it will be for us to find `vectors of a
 - OS detection
 - Scriptable interaction with the target service (Nmap Scripting Engine)
 
-<br>
-
 ### Syntax
 
 ```console
 sudo nmap <scan types> <options> <target>
 ```
-
-<br>
 
 ### Scan Techniques
 
@@ -86,7 +79,6 @@ The TCP-SYN scan (`-sS`) is one of the default settings unless we have defined o
 
 <br>
 <br>
-<br>
 
 ## Host Discovery
 
@@ -94,10 +86,11 @@ The most effective host discovery method is to use `ICMP echo requests`, which w
 
 ### Scan Network Range
 ```console
-sudo nmap 10.129.2.0/24 -sn -oA tnet | grep for | cut -d" " -f5
+sudo nmap 10.129.2.0/24 -sn -n -oA tnet | grep for | cut -d" " -f5 > hosts.lst
 ```
 - `10.129.2.0/24` 	Target network range.
 - `-sn` 	Disables port scanning.
+- `-n`      Disables DNS resolution.
 - `-oA tnet` 	Stores the results in all formats starting with the name 'tnet'.
 
 This scanning method works only if the firewalls of the hosts allow it.
