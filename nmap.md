@@ -130,13 +130,13 @@ In this example, we see that only 3 of 7 hosts are active. Remember, this may me
 It can also happen that we only need to scan a small part of a network:
 
 ```console
-sudo nmap -sn -oA tnet 10.129.2.18 10.129.2.19 10.129.2.20 | grep for | cut -d" " -f5
+sudo nmap -sn -n -oN alive_hosts.txt 10.129.2.18 10.129.2.19 10.129.2.20 | grep for | cut -d" " -f5 > ips.txt
 ```
 
 If these IP addresses are next to each other, we can also define the range in the respective octet:
 
 ```console
-sudo nmap -sn -oA tnet 10.129.2.18-20 | grep for | cut -d" " -f5
+sudo nmap -sn -n -oN alive_hosts.txt 10.129.2.18-20 | grep for | cut -d" " -f5 > ips.txt
 ```
 
 <br>
