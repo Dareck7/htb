@@ -291,6 +291,29 @@ MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
 
 Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
 ```
+```console
+# Nmap Scan (Quick)
+$ nmap -sC -sV 10.10.10.10
+
+# Nmap Scan (Full)
+$ nmap -sC -sV -p- 10.10.10.10
+
+# OS Detection
+$ nmap -Pn -O 10.10.10.10
+
+# Nmap Scan (UDP Quick)
+$ nmap -sU -sV 10.10.10.10
+
+# Agressive Scan (enable OS detection, version detection, script scanning, and traceroute)
+$ nmap -p- -vv -A -T4 scanme.nmap.org
+
+# Vulnerabillity Scan (/usr/share/nmap/scripts)
+nmap -p<port> --script=vuln 10.10.10.10
+
+# eJPT Scan
+$ nmap -p- -T4 -Pn -n -vv -iL ips.txt # doing a blanket scan first
+$ nmap -p<ports> -A -Pn -vv 10.10.10.10 # then an aggressive scan after based on what you find
+```
 
 <br>
 <br>
