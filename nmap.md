@@ -17,10 +17,6 @@
 - [Saving the Results](#saving-the-results)
     - [Different Formats](#different-formats)
 
-<br>
-
-**Enumeration** is collecting as much information as possible.<br>
-The more information we have, the easier it will be for us to find `vectors of attack`. 
 
 <br>
 
@@ -179,16 +175,6 @@ Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
 | `open-filtered` | If we do not get a response for a specific port, `Nmap` will set it to that state. This indicates that a firewall or packet filter may protect the port. |
 | `closed-filtered` | This state only occurs in the **IP ID idle** scans and indicates that it was impossible to determine if the scanned port is closed or filtered by a firewall. |
 
-
-By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default.
-
-### Filtered Ports
-
-When a packet gets dropped, `Nmap` receives no response from our target, and by default, the retry rate (`--max-retries`) is set to 1. This means Nmap will resend the request to the target port to determine if the previous packet was not accidentally mishandled.
-
-### Discovering Open UDP Ports
-
-We often do not get a response back because `Nmap` sends empty datagrams to the scanned UDP ports, and we do not receive any response. So we cannot determine if the UDP packet has arrived at all or not. If the UDP port is `open`, we only get a response if the application is configured to do so.
 
 ```console
 # Nmap Scan (Quick)
