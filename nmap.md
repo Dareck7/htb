@@ -86,7 +86,7 @@ The most effective host discovery method is to use `ICMP echo requests`, which w
 
 ### Scan Network Range
 ```console
-sudo nmap 10.129.2.0/24 -sn -n -oN alive_hosts.txt | grep for | cut -d" " -f5 > hosts.lst
+sudo nmap 10.129.2.0/24 -sn -n -oN alive_hosts.txt | grep for | cut -d" " -f5 > ips.lst
 ```
 - `10.129.2.0/24` 	Target network range.
 - `-sn` 	Disables port scanning.
