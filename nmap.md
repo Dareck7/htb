@@ -127,13 +127,13 @@ In this example, we see that only 3 of 7 hosts are active. Remember, this may me
 It can also happen that we only need to scan a small part of a network:
 
 ```console
-sudo nmap -sn -n -oN alive_hosts.txt 10.129.2.18 10.129.2.19 10.129.2.20 | grep for | cut -d" " -f5 > ips.txt
+sudo nmap -sn -n -oA tnet 10.129.2.18 10.129.2.19 10.129.2.20 | grep for | cut -d" " -f5 > ips.txt
 ```
 
 If these IP addresses are next to each other, we can also define the range in the respective octet:
 
 ```console
-sudo nmap -sn -n -oN alive_hosts.txt 10.129.2.18-20 | grep for | cut -d" " -f5 > ips.txt
+sudo nmap -sn -n -oA tnet 10.129.2.18-20 | grep for | cut -d" " -f5 > ips.txt
 ```
 
 <br>
@@ -143,11 +143,8 @@ sudo nmap -sn -n -oN alive_hosts.txt 10.129.2.18-20 | grep for | cut -d" " -f5 >
 Before we scan a single host for open ports and its services, we first have to determine if it is alive or not.
 
 ```console
-sudo nmap 10.129.2.18 -sn -oA host -PE --reason
+sudo nmap 10.129.2.18 -sn -n -oA host -PE --reason
 ```
-- `10.129.2.18` 	Performs defined scans against the target.
-- `-sn` 	Disables port scanning.
-- `-oA host` 	Stores the results in all formats starting with the name 'host'
 - `-PE` 	Performs the ping scan by using 'ICMP Echo requests' against the target.
 - `--reason ` Displays the reason for specific result.
 
