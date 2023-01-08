@@ -179,115 +179,17 @@ Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
 | `open-filtered` | If we do not get a response for a specific port, `Nmap` will set it to that state. This indicates that a firewall or packet filter may protect the port. |
 | `closed-filtered` | This state only occurs in the **IP ID idle** scans and indicates that it was impossible to determine if the scanned port is closed or filtered by a firewall. |
 
-<br>
-<br>
 
-### Discovering Open TCP Ports
-
-By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default.<br>
-
-#### Nmap - Trace the Packets
-
-```console
-Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -p 21 --packet-trace -Pn -n --disable-arp-ping
-
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:39 CEST
-SENT (0.0429s) TCP 10.10.14.2:63090 > 10.129.2.28:21 S ttl=56 id=57322 iplen=44  seq=1699105818 win=1024 <mss 1460>
-RCVD (0.0573s) TCP 10.129.2.28:21 > 10.10.14.2:63090 RA ttl=64 id=0 iplen=40  seq=0 win=0
-Nmap scan report for 10.11.1.28
-Host is up (0.014s latency).
-
-PORT   STATE  SERVICE
-21/tcp closed ftp
-MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
-
-Nmap done: 1 IP address (1 host up) scanned in 0.07 seconds
-```
-
-- `10.129.2.28` 	Scans the specified target.
-- `-p 21` 	Scans only the specified port.
-- `--packet-trace` 	Shows all packets sent and received.
-- `-n` 	Disables DNS resolution.
-- `--disable-arp-ping` 	Disables ARP ping.
-
-<br>
-
-#### Request
-- `SENT (0.0429s)` Indicates the SENT operation of Nmap, which sends a packet to the target.
-- `TCP` 	Shows the protocol that is being used to interact with the target port.
-- `10.10.14.2:63090 >` 	Represents our IPv4 address and the source port, which will be used by Nmap to send the packets.
-- `10.129.2.28:21` 	Shows the target IPv4 address and the target port.
-- `S` 	SYN flag of the sent TCP packet.
-- `ttl=56 id=57322 iplen=44 seq=1699105818 win=1024 mss 1460` 	Additional TCP Header parameters.
-
-#### Response
-- `RCVD (0.0573s)` 	Indicates a received packet from the target.
-- `TCP` 	Shows the protocol that is being used.
-- `10.129.2.28:21 >` 	Represents targets IPv4 address and the source port, which will be used to reply.
-- `10.10.14.2:63090` 	Shows our IPv4 address and the port that will be replied to.
-- `RA` 	RST and ACK flags of the sent TCP packet.
-- `ttl=64 id=0 iplen=40 seq=0 win=0` 	Additional TCP Header parameters.
-
-<br>
-<br>
+By default, `Nmap` scans the top 1000 TCP ports with the SYN scan (`-sS`). This SYN scan is set only to default when we run it as root because of the socket permissions required to create raw TCP packets. Otherwise, the TCP scan (`-sT`) is performed by default.
 
 ### Filtered Ports
 
 When a packet gets dropped, `Nmap` receives no response from our target, and by default, the retry rate (`--max-retries`) is set to 1. This means Nmap will resend the request to the target port to determine if the previous packet was not accidentally mishandled.
 
-```console
-Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -p 139 --packet-trace -n --disable-arp-ping -Pn
-
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 15:45 CEST
-SENT (0.0381s) TCP 10.10.14.2:60277 > 10.129.2.28:139 S ttl=47 id=14523 iplen=44  seq=4175236769 win=1024 <mss 1460>
-SENT (1.0411s) TCP 10.10.14.2:60278 > 10.129.2.28:139 S ttl=45 id=7372 iplen=44  seq=4175171232 win=1024 <mss 1460>
-Nmap scan report for 10.129.2.28
-Host is up.
-
-PORT    STATE    SERVICE
-139/tcp filtered netbios-ssn
-MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
-
-Nmap done: 1 IP address (1 host up) scanned in 2.06 seconds
-```
-- `10.129.2.28` 	Scans the specified target.
-- `-p 139` 	Scans only the specified port.
-- `--packet-trace` 	Shows all packets sent and received.
-- `-n` 	Disables DNS resolution.
-- `--disable-arp-ping` 	Disables ARP ping.
-- `-Pn` 	Disables ICMP Echo requests.
-
-<br>
-<br>
-
 ### Discovering Open UDP Ports
-
-```console
-sudo nmap 10.129.2.28 -F -sU
-```
-- `10.129.2.28` 	Scans the specified target.
-- `-F` 	Scans top 100 ports.
-- `-sU` 	Performs a UDP scan.
-
-<br>
 
 We often do not get a response back because `Nmap` sends empty datagrams to the scanned UDP ports, and we do not receive any response. So we cannot determine if the UDP packet has arrived at all or not. If the UDP port is `open`, we only get a response if the application is configured to do so.
 
-```console
-Dareck7@htb[/htb]$ sudo nmap 10.129.2.28 -sU -Pn -n --disable-arp-ping --packet-trace -p 137 --reason 
-
-Starting Nmap 7.80 ( https://nmap.org ) at 2020-06-15 16:15 CEST
-SENT (0.0367s) UDP 10.10.14.2:55478 > 10.129.2.28:137 ttl=57 id=9122 iplen=78
-RCVD (0.0398s) UDP 10.129.2.28:137 > 10.10.14.2:55478 ttl=64 id=13222 iplen=257
-Nmap scan report for 10.129.2.28
-Host is up, received user-set (0.0031s latency).
-
-PORT    STATE SERVICE    REASON
-137/udp open  netbios-ns udp-response ttl 64
-MAC Address: DE:AD:00:00:BE:EF (Intel Corporate)
-
-Nmap done: 1 IP address (1 host up) scanned in 0.04 seconds
-```
 ```console
 # Nmap Scan (Quick)
 $ nmap -sC -sV 10.10.10.10
