@@ -117,42 +117,14 @@ In this example, we see that only 3 of 7 hosts are active. Remember, this may me
 
 ## Host and Port Scanning
 
-| State      |  Description    |
-|--------------|----------------|
-| `open`   | This indicates that the connection to the scanned port has been established. These connections can be **TCP connections**, **UDP datagrams** as well as **SCTP associations**. |
-| `closed`      | When the port is shown as closed, the TCP protocol indicates that the packet we received back contains an `RST` flag. This scanning method can also be used to determine if our target is alive or not.  |
-| `filtered` | Nmap cannot correctly identify whether the scanned port is open or closed because either no response is returned from the target for the port or we get an error code from the target. |
-| `unfiltered` |  	This state of a port only occurs during the **TCP-ACK** scan and means that the port is accessible, but it cannot be determined whether it is open or closed. |
-| `open-filtered` | If we do not get a response for a specific port, `Nmap` will set it to that state. This indicates that a firewall or packet filter may protect the port. |
-| `closed-filtered` | This state only occurs in the **IP ID idle** scans and indicates that it was impossible to determine if the scanned port is closed or filtered by a firewall. |
-
-
 ```console
-# Nmap Scan (Quick)
-$ nmap -sC -sV 10.10.10.10
+# Doing a blanket scan first:
+sudo nmap -p- -T4 -Pn -n -vvv -iL hosts.lst
 
-# Nmap Scan (Full)
-$ nmap -sC -sV -p- 10.10.10.10
-
-# OS Detection
-$ nmap -Pn -O 10.10.10.10
-
-# Nmap Scan (UDP Quick)
-$ nmap -sU -sV 10.10.10.10
-
-# Agressive Scan (enable OS detection, version detection, script scanning, and traceroute)
-$ nmap -p- -vv -A -T4 scanme.nmap.org
-
-# Vulnerabillity Scan (/usr/share/nmap/scripts)
-nmap -p<port> --script=vuln 10.10.10.10
-
-# eJPT Scan
-$ nmap -p- -T4 -Pn -n -vv -iL ips.txt # doing a blanket scan first
-$ nmap -p<ports> -A -Pn -vv 10.10.10.10 # then an aggressive scan after based on what you find
+# Then an aggressive scan after based on what you find:
+sudo nmap -p<ports> -A -Pn -vvv 10.10.10.10
 ```
 
-<br>
-<br>
 <br>
 
 ## Saving the Results
