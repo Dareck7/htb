@@ -1,10 +1,6 @@
-# Nmap
+# HTB Academy
 
-- [Introduction to Nmap](#introduction-to-nmap)
-    - [Use Cases](#use-cases)
-    - [Nmap Architecture](#nmap-architecture)
-    - [Syntax](#syntax)
-    - [Scan Techniques](#scan-techniques)
+- [VPN Troubleshooting](#vpn-troubleshooting)
 - [Host Discovery](#host-discovery)
     - [Scan Network Range](#scan-network-range)
     - [Scan IP List](#scan-ip-list)
@@ -16,6 +12,29 @@
     - [Different Formats](#different-formats)
 
 <br>
+
+## VPN Troubleshooting
+```diff
+# 1 - Still Connected to VPN 
+sudo openvpn ./htb.ovpn  
+
+...SNIP...  
+
+Initialization Sequence Completed  
+
+
+# 2 - Getting VPN Address 
+ip -4 a show tun0  
+
+# 3 - Checking Routing Table 
+netstat -rn
+
+# 4 - Pinging Gateway 
+ping -c4 10.10.10.10  
+
+# 5 - How to delete a virtual interface 
+sudo ip link delete tun1
+```
 
 ## Introduction to Nmap
 
@@ -117,12 +136,13 @@ In this example, we see that only 3 of 7 hosts are active. Remember, this may me
 
 ## Host and Port Scanning
 
+Doing a blanket scan first:
 ```console
-# Doing a blanket scan first:
-sudo nmap -p- -T4 -Pn -n -vvv -iL hosts.lst
-
-# Then an aggressive scan after based on what you find:
-sudo nmap -p<ports> -A -Pn -vvv 10.10.10.10
+sudo nmap -p- -T4 -Pn -n -vvv $ip
+```
+```console
+# Then an aggressive scan after based on what you find
+sudo nmap -p<ports> -A -Pn -vvv $ip
 ```
 
 <br>
