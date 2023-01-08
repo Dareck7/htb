@@ -1,4 +1,4 @@
-# HTB
+# Getting Started
 
 - [Penetration Testing Process](#penetration-testing-process) 
      - [Pre-Engagement](#pre-engagement)
