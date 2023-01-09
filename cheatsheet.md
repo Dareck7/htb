@@ -62,8 +62,9 @@ nmap -Pn -n -vvv -p- -T4 -oN nmap/allports $ip
 
 # Then an aggressive scan after based on what you find
 nmap -Pn -n -vvv -p<ports> -A -oN nmap/targeted $ip
-
-# UDP Scanning
+```
+#### UDP Scanning
+```console
 nmap -Pn -n -vvv -sU -oN nmap/udp $ip
 ```
 #### Automated nmap scanning (my preference is nmapAutomator, never missed a port)
