@@ -2,7 +2,7 @@
 
 ### Penetration Testing Process
 
-<img src="img/penetration_testing_process.md">
+<img src="img/penetration_testing_process.png">
 
 ### Folder Structure
 
