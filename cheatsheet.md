@@ -1,4 +1,4 @@
-## Pentest Cheatsheet
+# Pentest Cheatsheet
 
 <img src="img/htb2.png">
 
@@ -7,22 +7,23 @@
 - [VPN Troubleshooting](#vpn-troubleshooting)
 - [Nmap](#nmap)
   - [Host Discovery](#host-discovery)
+  - [General Enumeration](#general-enumeration)
 
 <br>
 
-### Penetration Testing Process
+## Penetration Testing Process
 
 <img src="img/penetration_testing_process.png">
 
 <br>
 
-### Folder Structure
+## Folder Structure
 
 <img src="img/folder_structure.png">
 
 <br>
 
-### VPN Troubleshooting
+## VPN Troubleshooting
 ```diff
 # Still Connected to VPN 
 $ sudo openvpn ./htb.ovpn  
@@ -46,13 +47,13 @@ $ sudo ip link delete tun1
 
 <br>
 
-### Nmap
+## Nmap
 
-#### Host Discovery
+### Host Discovery
 ```console
 nmap IPRANGE -sn -n | grep for | cut -d" " -f5 > hosts.lst
 ```
-#### General Enumeration
+### General Enumeration
 ```console
 # Doing a blanket scan first
 nmap -Pn -n -vvv -p- -T4 -oN nmap/allports $ip
