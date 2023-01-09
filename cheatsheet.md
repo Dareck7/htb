@@ -32,18 +32,22 @@ $ sudo openvpn ./htb.ovpn
 ...SNIP...  
 
 + Initialization Sequence Completed  
-
-# Getting VPN Address 
-$ ip -4 a show tun0  
-
+```
+```console
+# Getting VPN Address  
+ip -4 a show tun0 
+```
+```console
 # Checking Routing Table 
-$ netstat -rn
-
+netstat -rn
+```
+```console
 # Pinging Gateway 
-$ ping -c4 $ip  
-
+ping -c4 $ip
+```
+```console
 # Deleting a virtual interface 
-$ sudo ip link delete tun1
+sudo ip link delete tun1
 ```
 
 <br>
