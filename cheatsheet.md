@@ -71,5 +71,5 @@ nmap -Pn -n -vvv -sU -oN nmap/udp $ip
 # It is recommended to scan ONE IP at a time
 # Do NOT overload the network
 # All scans, consecutively: Quick, Targeted, UDP, All ports, Vuln scan, CVE scan, Gobuster, Nikto
-nmapAutomator $ip all
+nmapAutomator $ip All
 ```
