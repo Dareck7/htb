@@ -35,7 +35,7 @@ $ sudo openvpn ./htb.ovpn
 $ ip -4 a show tun0  
 
 # Checking Routing Table 
-$ sudo netstat -rn
+$ netstat -rn
 
 # Pinging Gateway 
 $ ping -c4 $ip  
@@ -50,16 +50,16 @@ $ sudo ip link delete tun1
 
 #### Host Discovery
 ```console
-nmap IPRANGE -sn -n -oA nmap | grep for | cut -d" " -f5 > hosts.lst
+nmap IPRANGE -sn -n | grep for | cut -d" " -f5 > hosts.lst
 ```
-#### Port Scanning
+#### General Enumeration
 ```console
 # Doing a blanket scan first
-nmap -Pn -n -vvv -p- -T4 -iL hosts.lst
+nmap -Pn -n -vvv -p- -T4 -oN nmap/allports $ip
 
 # Then an aggressive scan after based on what you find
-nmap -p<ports> -A -Pn -vvv $ip
+nmap -Pn -n -vvv -p<ports> -A -oN nmap/targeted $ip
 
-# Vulnerabillity Scan
-nmap -p<port> --script=vuln 10.10.10.10
+# UDP Scanning
+nmap -Pn -n -vvv -sU -oN nmap/udp $ip
 ```
