@@ -5,9 +5,10 @@
 - [Penetration Testing Process](#penetration-testing-process)
 - [Folder Structure](#folder-structure)
 - [VPN Troubleshooting](#vpn-troubleshooting)
-- [Nmap](#nmap)
-  - [Host Discovery](#host-discovery)
-  - [General Enumeration](#general-enumeration)
+- [Reconnaissance](#reconnaissance)
+  - [Nmap](#nmap)
+    - [Host Discovery](#host-discovery)
+    - [General Enumeration](#general-enumeration)
 
 <br>
 
@@ -47,13 +48,14 @@ $ sudo ip link delete tun1
 
 <br>
 
-## Nmap
+## Reconnaissance
 
-### Host Discovery
-```console
-nmap IPRANGE -sn -n | grep for | cut -d" " -f5 > hosts.lst
-```
-### General Enumeration
+### Nmap
+
+#### Host Discovery
+> $ nmap IPRANGE -sn -n | grep for | cut -d" " -f5 > hosts.lst
+
+#### General Enumeration
 ```console
 # Doing a blanket scan first
 nmap -Pn -n -vvv -p- -T4 -oN nmap/allports $ip
