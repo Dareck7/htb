@@ -78,4 +78,4 @@ nmap -Pn -n -vvv -sU -oN nmap/udp $ip
 nmapAutomator $ip All
 ```
 
-### Misc
+## Misc
