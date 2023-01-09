@@ -1,6 +1,18 @@
 ## Pentest Cheatsheet
 
-<img src="img/penetration_testing_process2.png">
+<img src="img/htb.png">
+
+- [Penetration Testing Process](#penetration-testing-process)
+- [Folder Structure](#folder-structure)
+- [VPN Troubleshooting](#vpn-troubleshooting)
+- [Nmap](#nmap)
+  - [Host Discovery](#host-discovery)
+
+<br>
+
+### Penetration Testing Process
+
+<img src="img/penetration_testing_process.png">
 
 ### Folder Structure
 
