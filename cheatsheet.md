@@ -64,3 +64,10 @@ nmap -Pn -n -vvv -p<ports> -A -oN nmap/targeted $ip
 # UDP Scanning
 nmap -Pn -n -vvv -sU -oN nmap/udp $ip
 ```
+#### Automated nmap scanning (my preference is nmapAutomator, never missed a port)
+```console
+# It is recommended to scan ONE IP at a time
+# Do NOT overload the network
+# All scans, consecutively: Quick, Targeted, UDP, All ports, Vuln scan, CVE scan, Gobuster, Nikto
+nmapAutomator $ip All
+```
