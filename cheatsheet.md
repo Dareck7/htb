@@ -1,6 +1,6 @@
 ## Pentest Cheatsheet
 
-<img src="img/htb.png">
+<img src="img/htb2.png">
 
 - [Penetration Testing Process](#penetration-testing-process)
 - [Folder Structure](#folder-structure)
