@@ -9,6 +9,8 @@
   - [Nmap](#nmap)
     - [Host Discovery](#host-discovery)
     - [General Enumeration](#general-enumeration)
+    - [Scanning UDP](#scanning-udp)
+    - [nmapAutomator](#automated-nmap-scanning-(my-preference-is-nmapautomator,-never-missed-a-port))
 
 <br>
 
