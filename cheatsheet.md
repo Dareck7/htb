@@ -40,3 +40,10 @@ $ ping -c4 $ip
 # Deleting a virtual interface 
 $ sudo ip link delete tun1
 ```
+
+### Nmap
+
+#### Host Discovery
+```console
+sudo nmap IPRANGE -sn -n -oA nmap | grep for | cut -d" " -f5 > hosts.lst
+```
