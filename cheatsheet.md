@@ -11,6 +11,7 @@
     - [General Enumeration](#general-enumeration)
     - [Scanning UDP](#scanning-udp)
     - [nmapAutomator](#automated-nmap-scanning-(my-preference-is-nmapautomator,-never-missed-a-port))
+- [Misc](#misc)
 
 <br>
 
@@ -76,3 +77,5 @@ nmap -Pn -n -vvv -sU -oN nmap/udp $ip
 # All scans, consecutively: Quick, Targeted, UDP, All ports, Vuln scan, CVE scan, Gobuster, Nikto
 nmapAutomator $ip All
 ```
+
+### Misc
