@@ -1,5 +1,9 @@
 ## Pentest Cheatsheet
 
+### Penetration Testing Process
+
+<img src="img/penetration_testing_process.md">
+
 ### Folder Structure
 
 <img src="img/folder_structure.png">
