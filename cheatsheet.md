@@ -1,4 +1,4 @@
-# Pentest Cheatsheet
+# HTB CheatSheet
 
 <img src="img/htb2.png">
 
